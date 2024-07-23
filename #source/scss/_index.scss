@@ -454,6 +454,29 @@
 
     }
 
+    &.sold {
+        .propertybox__pic {
+            filter: grayscale(1);
+        }
+    }
+
+    .bottinftext {
+        position: absolute;
+        right: 15px;
+        bottom: 15px;
+        color: #fff;
+        font-weight: 300;
+        font-size: 16px;
+    }
+
+    .soldimg {
+        position: absolute;
+        left: 15px;
+        top: 15px;
+        z-index: 2;
+        width: 115px;
+    }
+
 }
 
 .propertybox__pic {
@@ -470,8 +493,6 @@
     display: none;
 }
 
-
-
 @media(max-width:1440.8px) {
     .propertyboxes .propertybox a {
         height: 240px;
@@ -479,6 +500,13 @@
 
     .propertyboxes .propertybox .description ul {
         top: calc(100% + 10px);
+    }
+}
+
+@media(max-width:1400.8px)  {
+
+    .filtersection__box {
+        margin: 0 5px 10px 5px;
     }
 }
 

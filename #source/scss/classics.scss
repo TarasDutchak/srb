@@ -1,0 +1,94 @@
+.darktheme {
+
+    .header,
+    header.header nav .submenu,
+    header.header nav .submenu:after,
+    header.header nav .submenu:before,
+    .pagesideline,
+    .property-section,
+    footer.footer {
+        background: var(--theme-background-color);
+    }
+
+    header.header nav>ul>li>a,
+    header.header nav>ul>li>a:hover,
+    header.header nav .submenu li a,
+    header.header nav .submenu li a:hover,
+    .locfilter li a,
+    .filtersection .text-center a,
+    .footer__logosect p,
+    .footer__nav ul li a,
+    .disignedby,
+    .footer__nav ul li a:hover {
+        color: #fff;
+    }
+
+    header.header nav>ul>li>a:after,
+    header.header nav .submenu li a:after,
+    .filtersection .text-center a:after,
+    .footer__nav ul li a:hover:after,
+    button.burger span:before,
+    button.burger span,
+    button.burger:after,
+    button.burger:before,
+    button.burger.on:before,
+    button.burger.on span:before,
+    button.burger.on:after,
+    button.burger.on span {
+        background: #fff;
+    }
+
+    .pagesideline__logo svg g,
+    .pagesideline__btn svg g,
+    .footer__logosect svg g,
+    .mobheadbox svg g {
+        fill: #fff;
+    }
+
+    .filtersection {
+        background-color: rgba(66, 66, 66, 1);
+    }
+
+    .property-section .gnrbtn {
+        border-color: #fff;
+        color: #fff;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+@media(max-width:991.8px) {
+    .darktheme {
+        header.header nav.show {
+            background: var(--theme-background-color);
+        }
+    
+        .pagesideline__soclist li a svg path {
+            fill: #fff;
+        }
+    }
+
+    .filterbtn {
+        color: #fff;
+    }
+
+    .filterbtn img {
+        filter: contrast(0);
+    }
+
+    .footer .socials li svg path {
+        fill: #fff;
+    }
+
+
+    
+}

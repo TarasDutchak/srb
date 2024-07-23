@@ -1,0 +1,178 @@
+{
+    "sourceFile": "#source/scss/classics.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 40,
+            "patches": [
+                {
+                    "date": 1721747681623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1721747704127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,29 @@\n .darktheme {\n-    \n+\n+    .header {\n+        background: var(--theme-background-color);\n+    }\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721747746380,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,11 @@\n     .header {\n         background: var(--theme-background-color);\n     }\n \n+    header.header nav>ul>li>a {\n+        color: #fff;\n+    }\n \n \n \n \n@@ -24,6 +27,5 @@\n \n \n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721747774762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,10 @@\n     .header {\n         background: var(--theme-background-color);\n     }\n \n-    header.header nav>ul>li>a {\n+    header.header nav>ul>li>a,\n+    header.header nav>ul>li>a:hover {\n         color: #fff;\n     }\n \n \n"
+                },
+                {
+                    "date": 1721747789786,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,11 @@\n     header.header nav>ul>li>a:hover {\n         color: #fff;\n     }\n \n+    header.header nav>ul>li>a:after {\n+        background: #fff;\n+    }\n \n \n \n \n@@ -27,6 +30,5 @@\n \n \n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721747806867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n .darktheme {\n \n-    .header {\n+    .header,\n+    header.header nav .submenu {\n         background: var(--theme-background-color);\n     }\n \n     header.header nav>ul>li>a,\n"
+                },
+                {
+                    "date": 1721747818070,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,10 @@\n .darktheme {\n \n     .header,\n-    header.header nav .submenu {\n+    header.header nav .submenu,\n+    header.header nav .submenu:after,\n+    header.header nav .submenu:before {\n         background: var(--theme-background-color);\n     }\n \n     header.header nav>ul>li>a,\n"
+                },
+                {
+                    "date": 1721747830683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,10 @@\n         background: var(--theme-background-color);\n     }\n \n     header.header nav>ul>li>a,\n-    header.header nav>ul>li>a:hover {\n+    header.header nav>ul>li>a:hover,\n+    header.header nav .submenu li a {\n         color: #fff;\n     }\n \n     header.header nav>ul>li>a:after {\n"
+                },
+                {
+                    "date": 1721747852634,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,10 @@\n     }\n \n     header.header nav>ul>li>a,\n     header.header nav>ul>li>a:hover,\n-    header.header nav .submenu li a {\n+    header.header nav .submenu li a,\n+    header.header nav .submenu li a:hover {\n         color: #fff;\n     }\n \n     header.header nav>ul>li>a:after {\n"
+                },
+                {
+                    "date": 1721747874106,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,10 @@\n     header.header nav .submenu li a:hover {\n         color: #fff;\n     }\n \n-    header.header nav>ul>li>a:after {\n+    header.header nav>ul>li>a:after,\n+    header.header nav .submenu li a:after {\n         background: #fff;\n     }\n \n \n"
+                },
+                {
+                    "date": 1721747889022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,10 @@\n \n     .header,\n     header.header nav .submenu,\n     header.header nav .submenu:after,\n-    header.header nav .submenu:before {\n+    header.header nav .submenu:before,\n+    .pagesideline {\n         background: var(--theme-background-color);\n     }\n \n     header.header nav>ul>li>a,\n"
+                },
+                {
+                    "date": 1721747925410,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,11 @@\n     header.header nav .submenu li a:after {\n         background: #fff;\n     }\n \n+    .pagesideline__logo svg g {\n+        fill: var(--theme-background-color);\n+    }\n \n \n \n \n@@ -36,6 +39,5 @@\n \n \n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721748058851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,44 @@\n+.darktheme {\n+\n+    .header,\n+    header.header nav .submenu,\n+    header.header nav .submenu:after,\n+    header.header nav .submenu:before,\n+    .pagesideline {\n+        background: var(--theme-background-color);\n+    }\n+\n+    header.header nav>ul>li>a,\n+    header.header nav>ul>li>a:hover,\n+    header.header nav .submenu li a,\n+    header.header nav .submenu li a:hover {\n+        color: #fff;\n+    }\n+\n+    header.header nav>ul>li>a:after,\n+    header.header nav .submenu li a:after {\n+        background: #fff;\n+    }\n+\n+    .pagesideline__logo svg g,\n+    .pagesideline__btn svg g {\n+        fill: #fff;\n+    }\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721748082944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,10 @@\n \n     header.header nav>ul>li>a,\n     header.header nav>ul>li>a:hover,\n     header.header nav .submenu li a,\n-    header.header nav .submenu li a:hover {\n+    header.header nav .submenu li a:hover,\n+    .locfilter li a {\n         color: #fff;\n     }\n \n     header.header nav>ul>li>a:after,\n@@ -40,48 +41,5 @@\n \n \n \n \n-}\n-.darktheme {\n-\n-    .header,\n-    header.header nav .submenu,\n-    header.header nav .submenu:after,\n-    header.header nav .submenu:before,\n-    .pagesideline {\n-        background: var(--theme-background-color);\n-    }\n-\n-    header.header nav>ul>li>a,\n-    header.header nav>ul>li>a:hover,\n-    header.header nav .submenu li a,\n-    header.header nav .submenu li a:hover {\n-        color: #fff;\n-    }\n-\n-    header.header nav>ul>li>a:after,\n-    header.header nav .submenu li a:after {\n-        background: #fff;\n-    }\n-\n-    .pagesideline__logo svg g {\n-        fill: var(--theme-background-color);\n-    }\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721748110934,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,21 +25,23 @@\n     .pagesideline__btn svg g {\n         fill: #fff;\n     }\n \n+    .filtersection {\n+        background-color: rgba(66, 66, 66, .85);\n+    }\n \n \n \n \n \n \n+    \n \n \n \n \n \n \n \n \n-\n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721748121916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,48 @@\n+.darktheme {\n+\n+    .header,\n+    header.header nav .submenu,\n+    header.header nav .submenu:after,\n+    header.header nav .submenu:before,\n+    .pagesideline {\n+        background: var(--theme-background-color);\n+    }\n+\n+    header.header nav>ul>li>a,\n+    header.header nav>ul>li>a:hover,\n+    header.header nav .submenu li a,\n+    header.header nav .submenu li a:hover,\n+    .locfilter li a,\n+    .filtersection .text-center a {\n+        color: #fff;\n+    }\n+\n+    header.header nav>ul>li>a:after,\n+    header.header nav .submenu li a:after {\n+        background: #fff;\n+    }\n+\n+    .pagesideline__logo svg g,\n+    .pagesideline__btn svg g {\n+        fill: #fff;\n+    }\n+\n+    .filtersection {\n+        background-color: rgba(66, 66, 66, .85);\n+    }\n+\n+\n+\n+\n+\n+\n+    \n+\n+\n+\n+\n+\n+\n+\n+\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721748130245,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,10 @@\n         color: #fff;\n     }\n \n     header.header nav>ul>li>a:after,\n-    header.header nav .submenu li a:after {\n+    header.header nav .submenu li a:after,\n+    .filtersection .text-center a:after {\n         background: #fff;\n     }\n \n     .pagesideline__logo svg g,\n@@ -44,52 +45,5 @@\n \n \n \n \n-}\n-.darktheme {\n-\n-    .header,\n-    header.header nav .submenu,\n-    header.header nav .submenu:after,\n-    header.header nav .submenu:before,\n-    .pagesideline {\n-        background: var(--theme-background-color);\n-    }\n-\n-    header.header nav>ul>li>a,\n-    header.header nav>ul>li>a:hover,\n-    header.header nav .submenu li a,\n-    header.header nav .submenu li a:hover,\n-    .locfilter li a {\n-        color: #fff;\n-    }\n-\n-    header.header nav>ul>li>a:after,\n-    header.header nav .submenu li a:after {\n-        background: #fff;\n-    }\n-\n-    .pagesideline__logo svg g,\n-    .pagesideline__btn svg g {\n-        fill: #fff;\n-    }\n-\n-    .filtersection {\n-        background-color: rgba(66, 66, 66, .85);\n-    }\n-\n-\n-\n-\n-\n-\n-    \n-\n-\n-\n-\n-\n-\n-\n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721748145806,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,9 +28,9 @@\n         fill: #fff;\n     }\n \n     .filtersection {\n-        background-color: rgba(66, 66, 66, .85);\n+        background-color: rgba(66, 66, 66, 1);\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1721748671739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,10 @@\n     .header,\n     header.header nav .submenu,\n     header.header nav .submenu:after,\n     header.header nav .submenu:before,\n-    .pagesideline {\n+    .pagesideline,\n+    .property-section {\n         background: var(--theme-background-color);\n     }\n \n     header.header nav>ul>li>a,\n"
+                },
+                {
+                    "date": 1721748705298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,13 +32,15 @@\n     .filtersection {\n         background-color: rgba(66, 66, 66, 1);\n     }\n \n+    .property-section .gnrbtn {\n+        border-color: #fff;\n+    }\n \n \n \n \n-\n     \n \n \n \n"
+                },
+                {
+                    "date": 1721748732585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,10 @@\n     header.header nav .submenu,\n     header.header nav .submenu:after,\n     header.header nav .submenu:before,\n     .pagesideline,\n-    .property-section {\n+    .property-section,\n+    footer.footer {\n         background: var(--theme-background-color);\n     }\n \n     header.header nav>ul>li>a,\n@@ -34,13 +35,14 @@\n     }\n \n     .property-section .gnrbtn {\n         border-color: #fff;\n+        color: #fff;\n     }\n \n+   \n \n \n-\n     \n \n \n \n"
+                },
+                {
+                    "date": 1721748752320,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,10 @@\n         background: #fff;\n     }\n \n     .pagesideline__logo svg g,\n-    .pagesideline__btn svg g {\n+    .pagesideline__btn svg g,\n+    .footer__logosect svg g {\n         fill: #fff;\n     }\n \n     .filtersection {\n"
+                },
+                {
+                    "date": 1721748760122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,10 @@\n     header.header nav>ul>li>a:hover,\n     header.header nav .submenu li a,\n     header.header nav .submenu li a:hover,\n     .locfilter li a,\n-    .filtersection .text-center a {\n+    .filtersection .text-center a,\n+    .footer__logosect p {\n         color: #fff;\n     }\n \n     header.header nav>ul>li>a:after,\n"
+                },
+                {
+                    "date": 1721748766880,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,10 @@\n     header.header nav .submenu li a,\n     header.header nav .submenu li a:hover,\n     .locfilter li a,\n     .filtersection .text-center a,\n-    .footer__logosect p {\n+    .footer__logosect p,\n+    .footer__nav ul li a {\n         color: #fff;\n     }\n \n     header.header nav>ul>li>a:after,\n"
+                },
+                {
+                    "date": 1721748775620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,10 @@\n     header.header nav .submenu li a:hover,\n     .locfilter li a,\n     .filtersection .text-center a,\n     .footer__logosect p,\n-    .footer__nav ul li a {\n+    .footer__nav ul li a,\n+    .disignedby {\n         color: #fff;\n     }\n \n     header.header nav>ul>li>a:after,\n"
+                },
+                {
+                    "date": 1721748790783,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,10 @@\n     .locfilter li a,\n     .filtersection .text-center a,\n     .footer__logosect p,\n     .footer__nav ul li a,\n-    .disignedby {\n+    .disignedby,\n+    .footer__nav ul li a:hover {\n         color: #fff;\n     }\n \n     header.header nav>ul>li>a:after,\n"
+                },
+                {
+                    "date": 1721748797808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,10 @@\n     }\n \n     header.header nav>ul>li>a:after,\n     header.header nav .submenu li a:after,\n-    .filtersection .text-center a:after {\n+    .filtersection .text-center a:after,\n+    .footer__nav ul li a:hover:after {\n         background: #fff;\n     }\n \n     .pagesideline__logo svg g,\n"
+                },
+                {
+                    "date": 1721748903918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,10 @@\n     }\n \n     .pagesideline__logo svg g,\n     .pagesideline__btn svg g,\n-    .footer__logosect svg g {\n+    .footer__logosect svg g,\n+    .mobheadbox svg g {\n         fill: #fff;\n     }\n \n     .filtersection {\n"
+                },
+                {
+                    "date": 1721748913256,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,10 @@\n \n     header.header nav>ul>li>a:after,\n     header.header nav .submenu li a:after,\n     .filtersection .text-center a:after,\n-    .footer__nav ul li a:hover:after {\n+    .footer__nav ul li a:hover:after,\n+    button.burger span:before {\n         background: #fff;\n     }\n \n     .pagesideline__logo svg g,\n"
+                },
+                {
+                    "date": 1721748925773,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,65 @@\n+.darktheme {\n+\n+    .header,\n+    header.header nav .submenu,\n+    header.header nav .submenu:after,\n+    header.header nav .submenu:before,\n+    .pagesideline,\n+    .property-section,\n+    footer.footer {\n+        background: var(--theme-background-color);\n+    }\n+\n+    header.header nav>ul>li>a,\n+    header.header nav>ul>li>a:hover,\n+    header.header nav .submenu li a,\n+    header.header nav .submenu li a:hover,\n+    .locfilter li a,\n+    .filtersection .text-center a,\n+    .footer__logosect p,\n+    .footer__nav ul li a,\n+    .disignedby,\n+    .footer__nav ul li a:hover {\n+        color: #fff;\n+    }\n+\n+    header.header nav>ul>li>a:after,\n+    header.header nav .submenu li a:after,\n+    .filtersection .text-center a:after,\n+    .footer__nav ul li a:hover:after,\n+    button.burger span:before,\n+    button.burger span,\n+    button.burger:after,\n+    button.burger:before {\n+        background: #fff;\n+    }\n+\n+    .pagesideline__logo svg g,\n+    .pagesideline__btn svg g,\n+    .footer__logosect svg g,\n+    .mobheadbox svg g {\n+        fill: #fff;\n+    }\n+\n+    .filtersection {\n+        background-color: rgba(66, 66, 66, 1);\n+    }\n+\n+    .property-section .gnrbtn {\n+        border-color: #fff;\n+        color: #fff;\n+    }\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721748939677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -29,9 +29,10 @@\n     .footer__nav ul li a:hover:after,\n     button.burger span:before,\n     button.burger span,\n     button.burger:after,\n-    button.burger:before {\n+    button.burger:before,\n+    button.burger.on:before {\n         background: #fff;\n     }\n \n     .pagesideline__logo svg g,\n@@ -61,67 +62,5 @@\n \n \n \n \n-}\n-.darktheme {\n-\n-    .header,\n-    header.header nav .submenu,\n-    header.header nav .submenu:after,\n-    header.header nav .submenu:before,\n-    .pagesideline,\n-    .property-section,\n-    footer.footer {\n-        background: var(--theme-background-color);\n-    }\n-\n-    header.header nav>ul>li>a,\n-    header.header nav>ul>li>a:hover,\n-    header.header nav .submenu li a,\n-    header.header nav .submenu li a:hover,\n-    .locfilter li a,\n-    .filtersection .text-center a,\n-    .footer__logosect p,\n-    .footer__nav ul li a,\n-    .disignedby,\n-    .footer__nav ul li a:hover {\n-        color: #fff;\n-    }\n-\n-    header.header nav>ul>li>a:after,\n-    header.header nav .submenu li a:after,\n-    .filtersection .text-center a:after,\n-    .footer__nav ul li a:hover:after,\n-    button.burger span:before {\n-        background: #fff;\n-    }\n-\n-    .pagesideline__logo svg g,\n-    .pagesideline__btn svg g,\n-    .footer__logosect svg g,\n-    .mobheadbox svg g {\n-        fill: #fff;\n-    }\n-\n-    .filtersection {\n-        background-color: rgba(66, 66, 66, 1);\n-    }\n-\n-    .property-section .gnrbtn {\n-        border-color: #fff;\n-        color: #fff;\n-    }\n-\n-   \n-\n-\n-    \n-\n-\n-\n-\n-\n-\n-\n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721748952619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,9 +30,10 @@\n     button.burger span:before,\n     button.burger span,\n     button.burger:after,\n     button.burger:before,\n-    button.burger.on:before {\n+    button.burger.on:before,\n+    button.burger.on span:before {\n         background: #fff;\n     }\n \n     .pagesideline__logo svg g,\n"
+                },
+                {
+                    "date": 1721748959897,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,9 +31,10 @@\n     button.burger span,\n     button.burger:after,\n     button.burger:before,\n     button.burger.on:before,\n-    button.burger.on span:before {\n+    button.burger.on span:before,\n+    button.burger.on:after {\n         background: #fff;\n     }\n \n     .pagesideline__logo svg g,\n"
+                },
+                {
+                    "date": 1721748966977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,10 @@\n     button.burger:after,\n     button.burger:before,\n     button.burger.on:before,\n     button.burger.on span:before,\n-    button.burger.on:after {\n+    button.burger.on:after,\n+    button.burger.on span {\n         background: #fff;\n     }\n \n     .pagesideline__logo svg g,\n"
+                },
+                {
+                    "date": 1721749006706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,13 @@\n         color: #fff;\n     }\n \n \n+@media(max-width:991.8px) {\n+    header.header nav.show {\n+        background: var(--theme-background-color);\n+    }\n+}\n \n \n \n \n@@ -63,7 +68,5 @@\n \n \n \n \n-\n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721749022807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,12 @@\n @media(max-width:991.8px) {\n     header.header nav.show {\n         background: var(--theme-background-color);\n     }\n+\n+    .pagesideline__soclist li a svg g {\n+        fill: #fff;\n+    }\n }\n \n \n \n"
+                },
+                {
+                    "date": 1721749045769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,17 +54,9 @@\n         color: #fff;\n     }\n \n \n-@media(max-width:991.8px) {\n-    header.header nav.show {\n-        background: var(--theme-background-color);\n-    }\n \n-    .pagesideline__soclist li a svg g {\n-        fill: #fff;\n-    }\n-}\n \n \n \n \n@@ -72,5 +64,17 @@\n \n \n \n \n-}\n\\ No newline at end of file\n+}\n+@media(max-width:991.8px) {\n+    .darktheme {\n+        header.header nav.show {\n+            background: var(--theme-background-color);\n+        }\n+    \n+        .pagesideline__soclist li a svg g {\n+            fill: #fff;\n+        }\n+    }\n+    \n+}\n"
+                },
+                {
+                    "date": 1721749053610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,9 +71,9 @@\n         header.header nav.show {\n             background: var(--theme-background-color);\n         }\n     \n-        .pagesideline__soclist li a svg g {\n+        .pagesideline__soclist li a svg path {\n             fill: #fff;\n         }\n     }\n     \n"
+                },
+                {
+                    "date": 1721749076623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,6 +75,10 @@\n         .pagesideline__soclist li a svg path {\n             fill: #fff;\n         }\n     }\n+\n+    .filterbtn {\n+        color: #fff;\n+    }\n     \n }\n"
+                },
+                {
+                    "date": 1721749112040,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,6 +79,14 @@\n \n     .filterbtn {\n         color: #fff;\n     }\n+\n+    .filterbtn img {\n+        filter: contrast(0);\n+    }\n+\n+\n+\n+\n     \n }\n"
+                },
+                {
+                    "date": 1721749150154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,11 @@\n     .filterbtn img {\n         filter: contrast(0);\n     }\n \n+    .footer .socials li svg path {\n+        fill: #fff;\n+    }\n \n \n-\n     \n }\n"
+                }
+            ],
+            "date": 1721747681623,
+            "name": "Commit-0",
+            "content": ".darktheme {\n    \n}"
+        }
+    ]
+}

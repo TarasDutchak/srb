@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 13,
             "patches": [
                 {
                     "date": 1721744901972,
@@ -36,6 +36,30 @@
                 {
                     "date": 1721806567809,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,8 +95,9 @@\n     // PROJECTS - slider\r\n     var swiper = new Swiper(\".projectsslider\", {\r\n         slidesPerView: 1,\r\n         spaceBetween: 20,\r\n+        loop: true,\r\n         pagination: {\r\n             el: \".swiper-pagination\",\r\n             clickable: true,\r\n         },\r\n"
+                },
+                {
+                    "date": 1721810764151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,6 +109,12 @@\n             },\r\n           },\r\n     });\r\n \r\n+    var swiper = new Swiper(\".projectslider\", {\r\n+        slidesPerView: 1,\r\n+        spaceBetween: 20,\r\n+        loop: true,\r\n+    });\r\n \r\n+\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721810975522,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,8 +113,13 @@\n     var swiper = new Swiper(\".projectslider\", {\r\n         slidesPerView: 1,\r\n         spaceBetween: 20,\r\n         loop: true,\r\n+\r\n+        navigation: {\r\n+            nextEl: \".swiper-button-next\",\r\n+            prevEl: \".swiper-button-prev\",\r\n+          },\r\n     });\r\n \r\n \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811054879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -101,25 +101,26 @@\n             el: \".swiper-pagination\",\r\n             clickable: true,\r\n         },\r\n         breakpoints: {\r\n-           \r\n+\r\n             991: {\r\n-              slidesPerView: 3,\r\n-              spaceBetween: 30,\r\n+                slidesPerView: 3,\r\n+                spaceBetween: 30,\r\n             },\r\n-          },\r\n+        },\r\n     });\r\n \r\n     var swiper = new Swiper(\".projectslider\", {\r\n         slidesPerView: 1,\r\n         spaceBetween: 20,\r\n         loop: true,\r\n+        speed: 1200,\r\n \r\n         navigation: {\r\n             nextEl: \".swiper-button-next\",\r\n             prevEl: \".swiper-button-prev\",\r\n-          },\r\n+        },\r\n     });\r\n \r\n \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721812712115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,6 +121,10 @@\n             prevEl: \".swiper-button-prev\",\r\n         },\r\n     });\r\n \r\n+    $('.ddlink p').click(function(){\r\n+        \r\n+    })\r\n \r\n+\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721812768637,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,9 @@\n         },\r\n     });\r\n \r\n     $('.ddlink p').click(function(){\r\n-        \r\n+        $(this).next('ul').slideToggle();\r\n     })\r\n \r\n \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721812989707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -125,6 +125,9 @@\n     $('.ddlink p').click(function(){\r\n         $(this).next('ul').slideToggle();\r\n     })\r\n \r\n+    Fancybox.bind(\"[data-fancybox]\", {\r\n+        // Your custom options\r\n+      });\r\n \r\n })\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1721744901972,

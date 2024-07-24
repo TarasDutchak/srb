@@ -1,0 +1,169 @@
+.projectslider {
+    .imgwrap {
+        height: calc(100vh - 130px);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 50% 50%;
+        }
+    }
+
+    .swiper-button-next:after,
+    .swiper-button-prev:after {
+        color: #fff;
+        filter: drop-shadow(0 0 20px #000);
+    }
+}
+
+.projectcontent {
+    padding: 80px 0;
+    max-width: 910px;
+    margin: 0 auto;
+
+    h1 {
+        font-size: 28px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        color: #64656a;
+        line-height: 140%;
+    }
+
+    .stat {
+        list-style-type: none;
+        margin: 0 0 20px 0;
+        padding: 0;
+        text-transform: uppercase;
+        color: #64656a;
+
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 20px;
+            font-weight: 500;
+        }
+    }
+
+    h5 {
+        font-size: 18px;
+        color: #64656a;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+
+    p {
+        color: #64656a;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .inspections {
+        background: #f1f1f2;
+        margin-bottom: 50px;
+        padding: 30px;
+
+        .title {
+            text-transform: uppercase;
+            color: #aaa;
+            font-size: 12px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+    }
+
+    .ddbox {
+        .ddlink {
+            p {
+                text-decoration: underline;
+                text-underline-offset: 2px;
+                padding-left: 25px;
+                position: relative;
+                font-size: 12px;
+                color: #64656a;
+                cursor: pointer;
+                margin: 0;
+
+                &::after {
+                    content: '';
+                    display: inline-block;
+                    width: 16px;
+                    height: 20px;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background: url('../img/general/listarrow.png') no-repeat center / 14px;
+                }
+            }
+
+            ul {
+                padding-top: 10px;
+                margin: 0;
+                list-style-type: none;
+                padding-left: 25px;
+                display: none;
+
+                li {
+                    text-decoration: underline;
+                    text-underline-offset: 2px;
+                    padding-left: 25px;
+                    position: relative;
+                    font-size: 12px;
+                    color: #64656a;
+                    cursor: pointer;
+                    margin: 0 0 7px 0;
+                    display: block;
+
+                    &::after {
+                        content: '';
+                        display: inline-block;
+                        width: 14px;
+                        height: 16px;
+                        position: absolute;
+                        left: 0;
+                        top: 4px;
+                        background: url('../img/general/listarrow.png') no-repeat center / 12px;
+                    }
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .inspections__listl {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+            padding-left: 25px;
+            position: relative;
+            font-size: 12px;
+            color: #64656a;
+            cursor: pointer;
+            margin: 0 0 5px 0;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            &::after {
+                content: '';
+                display: inline-block;
+                width: 16px;
+                height: 20px;
+                position: absolute;
+                left: 0;
+                top: 2px;
+                background: url('../img/general/listarrow.png') no-repeat center / 14px;
+            }
+        }
+    }
+
+
+}

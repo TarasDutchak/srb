@@ -102,13 +102,32 @@ $(document).ready(function () {
             clickable: true,
         },
         breakpoints: {
-           
+
             991: {
-              slidesPerView: 3,
-              spaceBetween: 30,
+                slidesPerView: 3,
+                spaceBetween: 30,
             },
-          },
+        },
     });
 
+    var swiper = new Swiper(".projectslider", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        speed: 1200,
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+
+    $('.ddlink p').click(function(){
+        $(this).next('ul').slideToggle();
+    })
+
+    Fancybox.bind("[data-fancybox]", {
+        // Your custom options
+      });
 
 })

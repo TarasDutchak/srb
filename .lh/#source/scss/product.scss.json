@@ -1,0 +1,258 @@
+{
+    "sourceFile": "#source/scss/product.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 60,
+            "patches": [
+                {
+                    "date": 1721810814103,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1721810864696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n .projectslider {\n     .imgwrap {\n-        \n+        height: calc(100vh - 50px);\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721810918878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,12 @@\n .projectslider {\n     .imgwrap {\n         height: calc(100vh - 50px);\n+\n+        img {\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 50% 50%;\n+        }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721810939137,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n .projectslider {\n     .imgwrap {\n-        height: calc(100vh - 50px);\n+        height: calc(100vh - 130px);\n \n         img {\n             width: 100%;\n             height: 100%;\n"
+                },
+                {
+                    "date": 1721811021928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,9 @@\n             object-fit: cover;\n             object-position: 50% 50%;\n         }\n     }\n+\n+    .swiper-button-next:after, .swiper-button-prev:after {\n+        color: #fff;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811036629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,8 +9,10 @@\n             object-position: 50% 50%;\n         }\n     }\n \n-    .swiper-button-next:after, .swiper-button-prev:after {\n+    .swiper-button-next:after,\n+    .swiper-button-prev:after {\n         color: #fff;\n+        filter: drop-shadow(0 0 10px #000);\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811088775,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,18 @@\n+.projectslider {\n+    .imgwrap {\n+        height: calc(100vh - 130px);\n+\n+        img {\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 50% 50%;\n+        }\n+    }\n+\n+    .swiper-button-next:after,\n+    .swiper-button-prev:after {\n+        color: #fff;\n+        filter: drop-shadow(0 0 20px #000);\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811181570,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,22 +15,10 @@\n         color: #fff;\n         filter: drop-shadow(0 0 20px #000);\n     }\n }\n-.projectslider {\n-    .imgwrap {\n-        height: calc(100vh - 130px);\n \n-        img {\n-            width: 100%;\n-            height: 100%;\n-            object-fit: cover;\n-            object-position: 50% 50%;\n-        }\n-    }\n+.projectcontent {\n \n-    .swiper-button-next:after,\n-    .swiper-button-prev:after {\n-        color: #fff;\n-        filter: drop-shadow(0 0 10px #000);\n-    }\n+\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811193690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,7 +18,8 @@\n }\n \n .projectcontent {\n \n+    max-width: 910px;\n+    margin: 0 auto;\n \n-    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811203447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,9 +17,9 @@\n     }\n }\n \n .projectcontent {\n-\n+    padding: 80px 0;\n     max-width: 910px;\n     margin: 0 auto;\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811403785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,8 @@\n     padding: 80px 0;\n     max-width: 910px;\n     margin: 0 auto;\n \n+    h1 {\n+        font-size: 28px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811413550,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,29 @@\n+.projectslider {\n+    .imgwrap {\n+        height: calc(100vh - 130px);\n+\n+        img {\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 50% 50%;\n+        }\n+    }\n+\n+    .swiper-button-next:after,\n+    .swiper-button-prev:after {\n+        color: #fff;\n+        filter: drop-shadow(0 0 20px #000);\n+    }\n+}\n+\n+.projectcontent {\n+    padding: 80px 0;\n+    max-width: 910px;\n+    margin: 0 auto;\n+\n+    h1 {\n+        font-size: 28px;\n+        text-transform: uppercase;\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811422281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,34 +24,7 @@\n \n     h1 {\n         font-size: 28px;\n         text-transform: uppercase;\n+        margin-bottom: 20px;\n     }\n-}\n-.projectslider {\n-    .imgwrap {\n-        height: calc(100vh - 130px);\n-\n-        img {\n-            width: 100%;\n-            height: 100%;\n-            object-fit: cover;\n-            object-position: 50% 50%;\n-        }\n-    }\n-\n-    .swiper-button-next:after,\n-    .swiper-button-prev:after {\n-        color: #fff;\n-        filter: drop-shadow(0 0 20px #000);\n-    }\n-}\n-\n-.projectcontent {\n-    padding: 80px 0;\n-    max-width: 910px;\n-    margin: 0 auto;\n-\n-    h1 {\n-        font-size: 28px;\n-    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811447640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,6 +25,7 @@\n     h1 {\n         font-size: 28px;\n         text-transform: uppercase;\n         margin-bottom: 20px;\n+        color: #64656a;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811491690,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,5 +27,11 @@\n         text-transform: uppercase;\n         margin-bottom: 20px;\n         color: #64656a;\n     }\n+\n+    .stat {\n+        list-style-type: none;\n+        margin: 0 0 20px 0;\n+        padding: 0;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811515331,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,6 +32,8 @@\n     .stat {\n         list-style-type: none;\n         margin: 0 0 20px 0;\n         padding: 0;\n+        text-transform: uppercase;\n+        color: #64656a;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811523283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,6 +34,12 @@\n         margin: 0 0 20px 0;\n         padding: 0;\n         text-transform: uppercase;\n         color: #64656a;\n+\n+        li {\n+            display: inline-block;\n+            vertical-align: middle;\n+            margin-right: 20px;\n+        }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811529160,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,7 +39,8 @@\n         li {\n             display: inline-block;\n             vertical-align: middle;\n             margin-right: 20px;\n+            font-weight: 500;\n         }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811557275,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n         font-size: 28px;\n         text-transform: uppercase;\n         margin-bottom: 20px;\n         color: #64656a;\n+        line-height: 160%;\n     }\n \n     .stat {\n         list-style-type: none;\n"
+                },
+                {
+                    "date": 1721811581321,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,9 +26,9 @@\n         font-size: 28px;\n         text-transform: uppercase;\n         margin-bottom: 20px;\n         color: #64656a;\n-        line-height: 160%;\n+        line-height: 140%;\n     }\n \n     .stat {\n         list-style-type: none;\n@@ -43,5 +43,17 @@\n             margin-right: 20px;\n             font-weight: 500;\n         }\n     }\n+\n+    h3 {\n+        font-size: 18px;\n+    }\n+\n+\n+\n+\n+\n+\n+\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811599290,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,9 @@\n     }\n \n     h3 {\n         font-size: 18px;\n+        color: ##64656a;\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1721811606788,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,11 +44,11 @@\n             font-weight: 500;\n         }\n     }\n \n-    h3 {\n+    h5 {\n         font-size: 18px;\n-        color: ##64656a;\n+        color: #64656a;\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1721811612347,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -47,8 +47,9 @@\n \n     h5 {\n         font-size: 18px;\n         color: #64656a;\n+        font-weight: 500;\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1721811622580,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -48,8 +48,9 @@\n     h5 {\n         font-size: 18px;\n         color: #64656a;\n         font-weight: 500;\n+        margin-bottom: 30px;\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1721811640514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,12 +51,14 @@\n         font-weight: 500;\n         margin-bottom: 30px;\n     }\n \n+    p {\n+        color: #64656a;\n+    }\n \n \n \n \n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721811647176,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,9 @@\n     }\n \n     p {\n         color: #64656a;\n+        font-size: 14px;\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1721811657322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,9 @@\n \n     p {\n         color: #64656a;\n         font-size: 14px;\n+        margin-bottom: 26px;\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1721811673304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n \n     p {\n         color: #64656a;\n         font-size: 14px;\n-        margin-bottom: 26px;\n+        margin-bottom: 25px;\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1721812192554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,10 +57,13 @@\n         font-size: 14px;\n         margin-bottom: 25px;\n     }\n \n+    .inspections {\n+        background: #f1f1f2;\n+        margin-bottom: 50px;\n+    }\n \n \n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721812197927,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,9 @@\n \n     .inspections {\n         background: #f1f1f2;\n         margin-bottom: 50px;\n+        padding: 30px;\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1721812215932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,12 @@\n     .inspections {\n         background: #f1f1f2;\n         margin-bottom: 50px;\n         padding: 30px;\n+\n+        .title {\n+            text-transform: uppercase;\n+        }\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1721812246751,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,8 +64,9 @@\n         padding: 30px;\n \n         .title {\n             text-transform: uppercase;\n+            color: #aaa;\n         }\n     }\n \n \n"
+                },
+                {
+                    "date": 1721812252428,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,8 +65,10 @@\n \n         .title {\n             text-transform: uppercase;\n             color: #aaa;\n+            font-size: 12px;\n+            font-weight: 500;\n         }\n     }\n \n \n"
+                },
+                {
+                    "date": 1721812261546,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,78 @@\n+.projectslider {\n+    .imgwrap {\n+        height: calc(100vh - 130px);\n+\n+        img {\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 50% 50%;\n+        }\n+    }\n+\n+    .swiper-button-next:after,\n+    .swiper-button-prev:after {\n+        color: #fff;\n+        filter: drop-shadow(0 0 20px #000);\n+    }\n+}\n+\n+.projectcontent {\n+    padding: 80px 0;\n+    max-width: 910px;\n+    margin: 0 auto;\n+\n+    h1 {\n+        font-size: 28px;\n+        text-transform: uppercase;\n+        margin-bottom: 20px;\n+        color: #64656a;\n+        line-height: 140%;\n+    }\n+\n+    .stat {\n+        list-style-type: none;\n+        margin: 0 0 20px 0;\n+        padding: 0;\n+        text-transform: uppercase;\n+        color: #64656a;\n+\n+        li {\n+            display: inline-block;\n+            vertical-align: middle;\n+            margin-right: 20px;\n+            font-weight: 500;\n+        }\n+    }\n+\n+    h5 {\n+        font-size: 18px;\n+        color: #64656a;\n+        font-weight: 500;\n+        margin-bottom: 30px;\n+    }\n+\n+    p {\n+        color: #64656a;\n+        font-size: 14px;\n+        margin-bottom: 25px;\n+    }\n+\n+    .inspections {\n+        background: #f1f1f2;\n+        margin-bottom: 50px;\n+        padding: 30px;\n+\n+        .title {\n+            text-transform: uppercase;\n+            color: #aaa;\n+            font-size: 12px;\n+            font-weight: 500;\n+            margin-bottom: 10px;\n+        }\n+    }\n+\n+\n+\n+\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721812296061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,85 +71,16 @@\n             margin-bottom: 10px;\n         }\n     }\n \n-\n-\n-\n-}\n-.projectslider {\n-    .imgwrap {\n-        height: calc(100vh - 130px);\n-\n-        img {\n-            width: 100%;\n-            height: 100%;\n-            object-fit: cover;\n-            object-position: 50% 50%;\n+    .ddbox {\n+        .ddlink {\n+            p {\n+                text-decoration: underline;\n+                text-underline-offset: 2px;\n+            }\n         }\n     }\n \n-    .swiper-button-next:after,\n-    .swiper-button-prev:after {\n-        color: #fff;\n-        filter: drop-shadow(0 0 20px #000);\n-    }\n-}\n \n-.projectcontent {\n-    padding: 80px 0;\n-    max-width: 910px;\n-    margin: 0 auto;\n \n-    h1 {\n-        font-size: 28px;\n-        text-transform: uppercase;\n-        margin-bottom: 20px;\n-        color: #64656a;\n-        line-height: 140%;\n-    }\n-\n-    .stat {\n-        list-style-type: none;\n-        margin: 0 0 20px 0;\n-        padding: 0;\n-        text-transform: uppercase;\n-        color: #64656a;\n-\n-        li {\n-            display: inline-block;\n-            vertical-align: middle;\n-            margin-right: 20px;\n-            font-weight: 500;\n-        }\n-    }\n-\n-    h5 {\n-        font-size: 18px;\n-        color: #64656a;\n-        font-weight: 500;\n-        margin-bottom: 30px;\n-    }\n-\n-    p {\n-        color: #64656a;\n-        font-size: 14px;\n-        margin-bottom: 25px;\n-    }\n-\n-    .inspections {\n-        background: #f1f1f2;\n-        margin-bottom: 50px;\n-        padding: 30px;\n-\n-        .title {\n-            text-transform: uppercase;\n-            color: #aaa;\n-            font-size: 12px;\n-            font-weight: 500;\n-        }\n-    }\n-\n-\n-\n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721812349463,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,8 +76,9 @@\n         .ddlink {\n             p {\n                 text-decoration: underline;\n                 text-underline-offset: 2px;\n+                padding-left: 20px;\n             }\n         }\n     }\n \n"
+                },
+                {
+                    "date": 1721812399782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,8 +77,19 @@\n             p {\n                 text-decoration: underline;\n                 text-underline-offset: 2px;\n                 padding-left: 20px;\n+\n+                &::after {\n+                    content: '';\n+                    display: inline-block;\n+                    width: 20px;\n+                    height: 20px;\n+                    position: absolute;\n+                    left: 0;\n+                    top: 0;\n+                    background: url('../img/general/listarrow.png') no-repeat center / 100%;\n+                }\n             }\n         }\n     }\n \n"
+                },
+                {
+                    "date": 1721812408725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,13 +77,14 @@\n             p {\n                 text-decoration: underline;\n                 text-underline-offset: 2px;\n                 padding-left: 20px;\n+                position: relative;\n \n                 &::after {\n                     content: '';\n                     display: inline-block;\n-                    width: 20px;\n+                    width: 16px;\n                     height: 20px;\n                     position: absolute;\n                     left: 0;\n                     top: 0;\n"
+                },
+                {
+                    "date": 1721812422050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,9 +87,9 @@\n                     height: 20px;\n                     position: absolute;\n                     left: 0;\n                     top: 0;\n-                    background: url('../img/general/listarrow.png') no-repeat center / 100%;\n+                    background: url('../img/general/listarrow.png') no-repeat center / 14px;\n                 }\n             }\n         }\n     }\n"
+                },
+                {
+                    "date": 1721812428493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,9 @@\n         .ddlink {\n             p {\n                 text-decoration: underline;\n                 text-underline-offset: 2px;\n-                padding-left: 20px;\n+                padding-left: 25px;\n                 position: relative;\n \n                 &::after {\n                     content: '';\n"
+                },
+                {
+                    "date": 1721812440676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,8 +78,9 @@\n                 text-decoration: underline;\n                 text-underline-offset: 2px;\n                 padding-left: 25px;\n                 position: relative;\n+                font-size: 12px;\n \n                 &::after {\n                     content: '';\n                     display: inline-block;\n"
+                },
+                {
+                    "date": 1721812450568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -79,8 +79,9 @@\n                 text-underline-offset: 2px;\n                 padding-left: 25px;\n                 position: relative;\n                 font-size: 12px;\n+                color: #64656a;\n \n                 &::after {\n                     content: '';\n                     display: inline-block;\n"
+                },
+                {
+                    "date": 1721812462117,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,8 +80,9 @@\n                 padding-left: 25px;\n                 position: relative;\n                 font-size: 12px;\n                 color: #64656a;\n+                cursor: pointer;\n \n                 &::after {\n                     content: '';\n                     display: inline-block;\n"
+                },
+                {
+                    "date": 1721812480770,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,8 +93,13 @@\n                     top: 0;\n                     background: url('../img/general/listarrow.png') no-repeat center / 14px;\n                 }\n             }\n+\n+            ul {\n+                margin: 0;\n+                list-style-type: none;\n+            }\n         }\n     }\n \n \n"
+                },
+                {
+                    "date": 1721812487585,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,8 +97,9 @@\n \n             ul {\n                 margin: 0;\n                 list-style-type: none;\n+                padding-left: 50px;\n             }\n         }\n     }\n \n"
+                },
+                {
+                    "date": 1721812495851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -97,9 +97,9 @@\n \n             ul {\n                 margin: 0;\n                 list-style-type: none;\n-                padding-left: 50px;\n+                padding-left: 25px;\n             }\n         }\n     }\n \n"
+                },
+                {
+                    "date": 1721812512801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -81,8 +81,9 @@\n                 position: relative;\n                 font-size: 12px;\n                 color: #64656a;\n                 cursor: pointer;\n+                margin: 0;\n \n                 &::after {\n                     content: '';\n                     display: inline-block;\n"
+                },
+                {
+                    "date": 1721812540493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -99,8 +99,20 @@\n             ul {\n                 margin: 0;\n                 list-style-type: none;\n                 padding-left: 25px;\n+\n+                li {\n+                    text-decoration: underline;\n+                    text-underline-offset: 2px;\n+                    padding-left: 25px;\n+                    position: relative;\n+                    font-size: 12px;\n+                    color: #64656a;\n+                    cursor: pointer;\n+                    margin: 0 0 10px 0;\n+                    display: block;\n+                }\n             }\n         }\n     }\n \n"
+                },
+                {
+                    "date": 1721812547254,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,8 +110,19 @@\n                     color: #64656a;\n                     cursor: pointer;\n                     margin: 0 0 10px 0;\n                     display: block;\n+\n+                    &::after {\n+                        content: '';\n+                        display: inline-block;\n+                        width: 16px;\n+                        height: 20px;\n+                        position: absolute;\n+                        left: 0;\n+                        top: 0;\n+                        background: url('../img/general/listarrow.png') no-repeat center / 14px;\n+                    }\n                 }\n             }\n         }\n     }\n"
+                },
+                {
+                    "date": 1721812552376,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n                         width: 16px;\n                         height: 20px;\n                         position: absolute;\n                         left: 0;\n-                        top: 0;\n+                        top: 2px;\n                         background: url('../img/general/listarrow.png') no-repeat center / 14px;\n                     }\n                 }\n             }\n"
+                },
+                {
+                    "date": 1721812562981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,14 +114,14 @@\n \n                     &::after {\n                         content: '';\n                         display: inline-block;\n-                        width: 16px;\n-                        height: 20px;\n+                        width: 14px;\n+                        height: 16px;\n                         position: absolute;\n                         left: 0;\n                         top: 2px;\n-                        background: url('../img/general/listarrow.png') no-repeat center / 14px;\n+                        background: url('../img/general/listarrow.png') no-repeat center / 12px;\n                     }\n                 }\n             }\n         }\n"
+                },
+                {
+                    "date": 1721812581782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,8 +96,9 @@\n                 }\n             }\n \n             ul {\n+                padding-top: 15px;\n                 margin: 0;\n                 list-style-type: none;\n                 padding-left: 25px;\n \n@@ -118,9 +119,9 @@\n                         width: 14px;\n                         height: 16px;\n                         position: absolute;\n                         left: 0;\n-                        top: 2px;\n+                        top: 4px;\n                         background: url('../img/general/listarrow.png') no-repeat center / 12px;\n                     }\n                 }\n             }\n"
+                },
+                {
+                    "date": 1721812679086,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,9 +96,9 @@\n                 }\n             }\n \n             ul {\n-                padding-top: 15px;\n+                padding-top: 10px;\n                 margin: 0;\n                 list-style-type: none;\n                 padding-left: 25px;\n \n@@ -109,9 +109,9 @@\n                     position: relative;\n                     font-size: 12px;\n                     color: #64656a;\n                     cursor: pointer;\n-                    margin: 0 0 10px 0;\n+                    margin: 0 0 7px 0;\n                     display: block;\n \n                     &::after {\n                         content: '';\n"
+                },
+                {
+                    "date": 1721812685620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,8 +122,12 @@\n                         left: 0;\n                         top: 4px;\n                         background: url('../img/general/listarrow.png') no-repeat center / 12px;\n                     }\n+\n+                    &:last-child {\n+                        margin-bottom: 0;\n+                    }\n                 }\n             }\n         }\n     }\n"
+                },
+                {
+                    "date": 1721812691825,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,8 +100,9 @@\n                 padding-top: 10px;\n                 margin: 0;\n                 list-style-type: none;\n                 padding-left: 25px;\n+                display: none;\n \n                 li {\n                     text-decoration: underline;\n                     text-underline-offset: 2px;\n"
+                },
+                {
+                    "date": 1721812819438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -132,7 +132,28 @@\n             }\n         }\n     }\n \n+    .inspections__listl {\n+        text-decoration: underline;\n+                text-underline-offset: 2px;\n+                padding-left: 25px;\n+                position: relative;\n+                font-size: 12px;\n+                color: #64656a;\n+                cursor: pointer;\n+                margin: 0;\n \n+                &::after {\n+                    content: '';\n+                    display: inline-block;\n+                    width: 16px;\n+                    height: 20px;\n+                    position: absolute;\n+                    left: 0;\n+                    top: 0;\n+                    background: url('../img/general/listarrow.png') no-repeat center / 14px;\n+                }\n+    }\n \n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721812830589,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,9 +133,10 @@\n         }\n     }\n \n     .inspections__listl {\n-        text-decoration: underline;\n+        li {\n+            text-decoration: underline;\n                 text-underline-offset: 2px;\n                 padding-left: 25px;\n                 position: relative;\n                 font-size: 12px;\n@@ -152,8 +153,9 @@\n                     left: 0;\n                     top: 0;\n                     background: url('../img/general/listarrow.png') no-repeat center / 14px;\n                 }\n+        }\n     }\n \n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721812839280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,28 +133,32 @@\n         }\n     }\n \n     .inspections__listl {\n+        list-style-type: none;\n+        margin: 0;\n+        padding: 0;\n+        \n         li {\n             text-decoration: underline;\n-                text-underline-offset: 2px;\n-                padding-left: 25px;\n-                position: relative;\n-                font-size: 12px;\n-                color: #64656a;\n-                cursor: pointer;\n-                margin: 0;\n+            text-underline-offset: 2px;\n+            padding-left: 25px;\n+            position: relative;\n+            font-size: 12px;\n+            color: #64656a;\n+            cursor: pointer;\n+            margin: 0;\n \n-                &::after {\n-                    content: '';\n-                    display: inline-block;\n-                    width: 16px;\n-                    height: 20px;\n-                    position: absolute;\n-                    left: 0;\n-                    top: 0;\n-                    background: url('../img/general/listarrow.png') no-repeat center / 14px;\n-                }\n+            &::after {\n+                content: '';\n+                display: inline-block;\n+                width: 16px;\n+                height: 20px;\n+                position: absolute;\n+                left: 0;\n+                top: 0;\n+                background: url('../img/general/listarrow.png') no-repeat center / 14px;\n+            }\n         }\n     }\n \n \n"
+                },
+                {
+                    "date": 1721812851461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -136,9 +136,9 @@\n     .inspections__listl {\n         list-style-type: none;\n         margin: 0;\n         padding: 0;\n-        \n+\n         li {\n             text-decoration: underline;\n             text-underline-offset: 2px;\n             padding-left: 25px;\n@@ -154,9 +154,9 @@\n                 width: 16px;\n                 height: 20px;\n                 position: absolute;\n                 left: 0;\n-                top: 0;\n+                top: 2px;\n                 background: url('../img/general/listarrow.png') no-repeat center / 14px;\n             }\n         }\n     }\n"
+                },
+                {
+                    "date": 1721812864742,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,10 +145,14 @@\n             position: relative;\n             font-size: 12px;\n             color: #64656a;\n             cursor: pointer;\n-            margin: 0;\n+            margin: 0 0 10px 0;\n \n+            &:last-child {\n+                margin-bottom: 0;\n+            }\n+\n             &::after {\n                 content: '';\n                 display: inline-block;\n                 width: 16px;\n"
+                },
+                {
+                    "date": 1721812870032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,9 +145,9 @@\n             position: relative;\n             font-size: 12px;\n             color: #64656a;\n             cursor: pointer;\n-            margin: 0 0 10px 0;\n+            margin: 0 0 5px 0;\n \n             &:last-child {\n                 margin-bottom: 0;\n             }\n"
+                }
+            ],
+            "date": 1721810814103,
+            "name": "Commit-0",
+            "content": ".projectslider {\n    .imgwrap {\n        \n    }\n}"
+        }
+    ]
+}

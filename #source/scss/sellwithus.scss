@@ -1,0 +1,69 @@
+.heroimg {
+    img {
+        width: 100%;
+    }
+
+    margin-bottom: 60px;
+}
+
+.sellwithbox {
+    padding: 100px 40px;
+    background: #f1f1f2;
+    text-align: center;
+    color: rgb(100, 101, 106);
+    margin-bottom: 70px;
+
+    p {
+        font-size: 14px;
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    .title {
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .greybtn {
+        margin-top: 40px;
+    }
+}
+
+@media(max-width:1199.8px) {
+
+    .sellwithbox {
+        padding: 70px 30px;
+    }
+
+}
+
+@media(max-width:575.8px) {
+    .sellwithbox .title {
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+
+    .sellwithbox {
+        padding: 40px 15px;
+    }
+
+    .heroimg {
+        margin-bottom: 30px;
+    }
+
+    .sellwithbox .greybtn {
+        margin-top: 30px;
+    }
+
+    .sellwithbox {
+        width: calc(100% + 50px);
+        margin-left: -25px;
+    }
+
+    .sellwithbox {
+        margin-bottom: 50px;
+    }
+
+}

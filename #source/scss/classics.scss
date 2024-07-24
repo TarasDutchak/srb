@@ -75,20 +75,21 @@
         .pagesideline__soclist li a svg path {
             fill: #fff;
         }
+        .filterbtn {
+            color: #fff;
+        }
+    
+        .filterbtn img {
+            filter: contrast(0);
+        }
+    
+        .footer .socials li svg path {
+            fill: #fff;
+        }
+    
     }
 
-    .filterbtn {
-        color: #fff;
-    }
-
-    .filterbtn img {
-        filter: contrast(0);
-    }
-
-    .footer .socials li svg path {
-        fill: #fff;
-    }
-
+   
 
     
 }

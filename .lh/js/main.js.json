@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 7,
             "patches": [
                 {
                     "date": 1721744901972,
@@ -16,6 +16,26 @@
                 {
                     "date": 1721746519531,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -84,9 +84,9 @@\n     // scroll to\r\n     $(\".scrollnext\").on(\"click\", function (event) {\r\n         event.preventDefault();\r\n         var id = $(this).attr('href'),\r\n-            top = $(id).offset().top - 80;\r\n+            top = $(id).offset().top - 70;\r\n         $('body,html').animate({ scrollTop: top }, 800);\r\n     });\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1721806181016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,5 +90,16 @@\n     });\r\n \r\n \r\n \r\n+\r\n+    // PROJECTS - slider\r\n+    var swiper = new Swiper(\".mySwiper\", {\r\n+        spaceBetween: 30,\r\n+        pagination: {\r\n+          el: \".swiper-pagination\",\r\n+          clickable: true,\r\n+        },\r\n+      });\r\n+\r\n+\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721806190710,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,9 +92,9 @@\n \r\n \r\n \r\n     // PROJECTS - slider\r\n-    var swiper = new Swiper(\".mySwiper\", {\r\n+    var swiper = new Swiper(\".projectsslider\", {\r\n         spaceBetween: 30,\r\n         pagination: {\r\n           el: \".swiper-pagination\",\r\n           clickable: true,\r\n"
+                },
+                {
+                    "date": 1721806321890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,13 +93,14 @@\n \r\n \r\n     // PROJECTS - slider\r\n     var swiper = new Swiper(\".projectsslider\", {\r\n+        slidesPerView: 3,\r\n         spaceBetween: 30,\r\n         pagination: {\r\n-          el: \".swiper-pagination\",\r\n-          clickable: true,\r\n+            el: \".swiper-pagination\",\r\n+            clickable: true,\r\n         },\r\n-      });\r\n+    });\r\n \r\n \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721806464599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,14 +93,21 @@\n \r\n \r\n     // PROJECTS - slider\r\n     var swiper = new Swiper(\".projectsslider\", {\r\n-        slidesPerView: 3,\r\n-        spaceBetween: 30,\r\n+        slidesPerView: 1,\r\n+        spaceBetween: 20,\r\n         pagination: {\r\n             el: \".swiper-pagination\",\r\n             clickable: true,\r\n         },\r\n+        breakpoints: {\r\n+           \r\n+            991: {\r\n+              slidesPerView: 3,\r\n+              spaceBetween: 30,\r\n+            },\r\n+          },\r\n     });\r\n \r\n \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721806567809,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,8 +95,9 @@\n     // PROJECTS - slider\r\n     var swiper = new Swiper(\".projectsslider\", {\r\n         slidesPerView: 1,\r\n         spaceBetween: 20,\r\n+        loop: true,\r\n         pagination: {\r\n             el: \".swiper-pagination\",\r\n             clickable: true,\r\n         },\r\n"
                 }
             ],
             "date": 1721744901972,

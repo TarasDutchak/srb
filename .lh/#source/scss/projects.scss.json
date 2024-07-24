@@ -1,0 +1,214 @@
+{
+    "sourceFile": "#source/scss/projects.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 49,
+            "patches": [
+                {
+                    "date": 1721804264098,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1721804282338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n-.projectssections__contant {\n-    \n+.projectssections__content {\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721804291992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,7 @@\n+.projectssections {\n+    padding: 75px 0;\n+}\n+\n .projectssections__content {\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721804340052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,6 +2,6 @@\n     padding: 75px 0;\n }\n \n .projectssections__content {\n-\n+    margin: 0 auto;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721804360406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,6 @@\n }\n \n .projectssections__content {\n     margin: 0 auto;\n+    max-width: 1040px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721804366276,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,6 @@\n \n .projectssections__content {\n     margin: 0 auto;\n     max-width: 1040px;\n+    padding: 80px 125px 0;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721804386143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,6 +4,8 @@\n \n .projectssections__content {\n     margin: 0 auto;\n     max-width: 1040px;\n+    width: 100%;\n     padding: 80px 125px 0;\n+    background: #f1f1f2;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721804417041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,7 +5,10 @@\n .projectssections__content {\n     margin: 0 auto;\n     max-width: 1040px;\n     width: 100%;\n+}\n+\n+.projectssections__greybox {\n     padding: 80px 125px 0;\n     background: #f1f1f2;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721804660829,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,9 @@\n \n .projectssections__greybox {\n     padding: 80px 125px 0;\n     background: #f1f1f2;\n+\n+    img {\n+        max-width: 100%;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721804686557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,5 +14,9 @@\n \n     img {\n         max-width: 100%;\n     }\n+\n+    .prlogo {\n+        max-width: 270px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721804693141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,6 +17,8 @@\n     }\n \n     .prlogo {\n         max-width: 270px;\n+        display: block;\n+        margin: 0 auto;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721804701038,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,7 +18,7 @@\n \n     .prlogo {\n         max-width: 270px;\n         display: block;\n-        margin: 0 auto;\n+        margin: 0 auto 40px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721804714659,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,5 +20,11 @@\n         max-width: 270px;\n         display: block;\n         margin: 0 auto 40px;\n     }\n+\n+    p {\n+        color: #3c3c3c;\n+        font-size: 14px;\n+        line-height: 26px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721804729887,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,31 @@\n+.projectssections {\n+    padding: 75px 0;\n+}\n+\n+.projectssections__content {\n+    margin: 0 auto;\n+    max-width: 1040px;\n+    width: 100%;\n+}\n+\n+.projectssections__greybox {\n+    padding: 80px 125px 0;\n+    background: #f1f1f2;\n+\n+    img {\n+        max-width: 100%;\n+    }\n+\n+    .prlogo {\n+        max-width: 270px;\n+        display: block;\n+        margin: 0 auto 40px;\n+    }\n+\n+    p {\n+        color: #3c3c3c;\n+        font-size: 14px;\n+        line-height: 26px;\n+        \n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721804762354,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,37 +25,10 @@\n     p {\n         color: #3c3c3c;\n         font-size: 14px;\n         line-height: 26px;\n-        \n     }\n-}\n-.projectssections {\n-    padding: 75px 0;\n-}\n \n-.projectssections__content {\n-    margin: 0 auto;\n-    max-width: 1040px;\n-    width: 100%;\n-}\n-\n-.projectssections__greybox {\n-    padding: 80px 125px 0;\n-    background: #f1f1f2;\n-\n-    img {\n-        max-width: 100%;\n+    .row {\n+        margin-top: 50px;\n     }\n-\n-    .prlogo {\n-        max-width: 270px;\n-        display: block;\n-        margin: 0 auto 40px;\n-    }\n-\n-    p {\n-        color: #3c3c3c;\n-        font-size: 14px;\n-        line-height: 26px;\n-    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721804804074,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,5 +30,24 @@\n \n     .row {\n         margin-top: 50px;\n     }\n+\n+    .imgwrap {\n+        height: 240px;\n+        position: relative;\n+\n+        img {\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 50% 50%;\n+        }\n+    }\n+\n+\n+\n+\n+\n+\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721804853736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,9 @@\n \n     .imgwrap {\n         height: 240px;\n         position: relative;\n+        margin-bottom: 20px;\n \n         img {\n             width: 100%;\n             height: 100%;\n@@ -48,6 +49,6 @@\n \n \n \n \n-    \n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721804914069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,18 @@\n             object-position: 50% 50%;\n         }\n     }\n \n+    h4 {\n+        color: #3c3c3c;\n+        font-weight: 600;\n+        font-size: 18px;\n+        letter-spacing: 1.6px;\n+        line-height: 28px;\n+        margin: 30px 0 15px;\n+        text-align: center;\n+        text-transform: uppercase;\n+    }\n \n \n \n \n"
+                },
+                {
+                    "date": 1721804925653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,10 +55,5 @@\n         text-align: center;\n         text-transform: uppercase;\n     }\n \n-\n-\n-\n-\n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721805449849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     width: 100%;\n }\n \n .projectssections__greybox {\n-    padding: 80px 125px 0;\n+    padding: 80px 125px;\n     background: #f1f1f2;\n \n     img {\n         max-width: 100%;\n@@ -55,5 +55,9 @@\n         text-align: center;\n         text-transform: uppercase;\n     }\n \n+}\n+\n+.projectitem {\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721805458673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,6 +58,10 @@\n \n }\n \n .projectitem {\n-    \n+    .imgwrap {\n+        img {\n+            width: 100%;\n+        }\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721805489409,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,8 +58,9 @@\n \n }\n \n .projectitem {\n+    margin-top: 60px;\n     .imgwrap {\n         img {\n             width: 100%;\n         }\n"
+                },
+                {
+                    "date": 1721805521268,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,10 +59,17 @@\n }\n \n .projectitem {\n     margin-top: 60px;\n+\n     .imgwrap {\n         img {\n             width: 100%;\n         }\n     }\n+\n+    p {}\n+\n+    .subtitle {}\n+\n+    .subtitle {}\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721805528393,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,13 @@\n             width: 100%;\n         }\n     }\n \n-    p {}\n+    p {\n+        font-size: 14px;\n+        line-height: 24px;\n+        margin-bottom: 20px;\n+    }\n \n     .subtitle {}\n \n     .subtitle {}\n"
+                },
+                {
+                    "date": 1721805583459,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,8 +59,9 @@\n }\n \n .projectitem {\n     margin-top: 60px;\n+    color: rgb(100, 101, 106);\n \n     .imgwrap {\n         img {\n             width: 100%;\n"
+                },
+                {
+                    "date": 1721805615242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,8 +73,15 @@\n         line-height: 24px;\n         margin-bottom: 20px;\n     }\n \n-    .subtitle {}\n+    .subtitle {\n+        font-weight: 600;\n+        letter-spacing: 1px;\n+    text-transform: uppercase;\n+    font-size: 18px;\n+    margin-bottom: 30px;\n \n+    }\n+\n     .subtitle {}\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721805638995,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,12 +76,20 @@\n \n     .subtitle {\n         font-weight: 600;\n         letter-spacing: 1px;\n-    text-transform: uppercase;\n-    font-size: 18px;\n-    margin-bottom: 30px;\n+        text-transform: uppercase;\n+        font-size: 18px;\n+        margin-bottom: 30px;\n \n     }\n \n-    .subtitle {}\n+    .subtitle {\n+        font-weight: 600;\n+        letter-spacing: 1px;\n+        text-transform: uppercase;\n+        font-size: 30px;\n+        line-height: 40px;\n+        margin-bottom: 5px;\n+\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721805648003,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,9 +82,9 @@\n         margin-bottom: 30px;\n \n     }\n \n-    .subtitle {\n+    .title {\n         font-weight: 600;\n         letter-spacing: 1px;\n         text-transform: uppercase;\n         font-size: 30px;\n"
+                },
+                {
+                    "date": 1721805683476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,10 @@\n \n .projectitem {\n     margin-top: 60px;\n     color: rgb(100, 101, 106);\n+    padding-bottom: 60px;\n+    border-bottom: 1px solid #3c3c3c;\n \n     .imgwrap {\n         img {\n             width: 100%;\n"
+                },
+                {
+                    "date": 1721805692820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,9 +61,9 @@\n .projectitem {\n     margin-top: 60px;\n     color: rgb(100, 101, 106);\n     padding-bottom: 60px;\n-    border-bottom: 1px solid #3c3c3c;\n+    border-bottom: 1px solid #d8d8d9;\n \n     .imgwrap {\n         img {\n             width: 100%;\n"
+                },
+                {
+                    "date": 1721805771794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -93,5 +93,9 @@\n         line-height: 40px;\n         margin-bottom: 5px;\n \n     }\n+\n+    &:nth-child(even) {\n+        opacity: 0.5;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721805786318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,103 @@\n+.projectssections {\n+    padding: 75px 0;\n+}\n+\n+.projectssections__content {\n+    margin: 0 auto;\n+    max-width: 1040px;\n+    width: 100%;\n+}\n+\n+.projectssections__greybox {\n+    padding: 80px 125px;\n+    background: #f1f1f2;\n+\n+    img {\n+        max-width: 100%;\n+    }\n+\n+    .prlogo {\n+        max-width: 270px;\n+        display: block;\n+        margin: 0 auto 40px;\n+    }\n+\n+    p {\n+        color: #3c3c3c;\n+        font-size: 14px;\n+        line-height: 26px;\n+    }\n+\n+    .row {\n+        margin-top: 50px;\n+    }\n+\n+    .imgwrap {\n+        height: 240px;\n+        position: relative;\n+        margin-bottom: 20px;\n+\n+        img {\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 50% 50%;\n+        }\n+    }\n+\n+    h4 {\n+        color: #3c3c3c;\n+        font-weight: 600;\n+        font-size: 18px;\n+        letter-spacing: 1.6px;\n+        line-height: 28px;\n+        margin: 30px 0 15px;\n+        text-align: center;\n+        text-transform: uppercase;\n+    }\n+\n+}\n+\n+.projectitem {\n+    margin-top: 60px;\n+    color: rgb(100, 101, 106);\n+    padding-bottom: 60px;\n+    border-bottom: 1px solid #d8d8d9;\n+\n+    .imgwrap {\n+        img {\n+            width: 100%;\n+        }\n+    }\n+\n+    p {\n+        font-size: 14px;\n+        line-height: 24px;\n+        margin-bottom: 20px;\n+    }\n+\n+    .subtitle {\n+        font-weight: 600;\n+        letter-spacing: 1px;\n+        text-transform: uppercase;\n+        font-size: 18px;\n+        margin-bottom: 30px;\n+\n+    }\n+\n+    .title {\n+        font-weight: 600;\n+        letter-spacing: 1px;\n+        text-transform: uppercase;\n+        font-size: 30px;\n+        line-height: 40px;\n+        margin-bottom: 5px;\n+\n+    }\n+\n+    &:nth-child(even) {\n+       .row {\n+        flex-direction: row-reverse;\n+       }\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721805867881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,8 +63,12 @@\n     color: rgb(100, 101, 106);\n     padding-bottom: 60px;\n     border-bottom: 1px solid #d8d8d9;\n \n+    &:last-child {\n+        border-bottom: none;\n+    }\n+\n     .imgwrap {\n         img {\n             width: 100%;\n         }\n@@ -99,106 +103,5 @@\n        .row {\n         flex-direction: row-reverse;\n        }\n     }\n-}\n-.projectssections {\n-    padding: 75px 0;\n-}\n-\n-.projectssections__content {\n-    margin: 0 auto;\n-    max-width: 1040px;\n-    width: 100%;\n-}\n-\n-.projectssections__greybox {\n-    padding: 80px 125px;\n-    background: #f1f1f2;\n-\n-    img {\n-        max-width: 100%;\n-    }\n-\n-    .prlogo {\n-        max-width: 270px;\n-        display: block;\n-        margin: 0 auto 40px;\n-    }\n-\n-    p {\n-        color: #3c3c3c;\n-        font-size: 14px;\n-        line-height: 26px;\n-    }\n-\n-    .row {\n-        margin-top: 50px;\n-    }\n-\n-    .imgwrap {\n-        height: 240px;\n-        position: relative;\n-        margin-bottom: 20px;\n-\n-        img {\n-            width: 100%;\n-            height: 100%;\n-            object-fit: cover;\n-            object-position: 50% 50%;\n-        }\n-    }\n-\n-    h4 {\n-        color: #3c3c3c;\n-        font-weight: 600;\n-        font-size: 18px;\n-        letter-spacing: 1.6px;\n-        line-height: 28px;\n-        margin: 30px 0 15px;\n-        text-align: center;\n-        text-transform: uppercase;\n-    }\n-\n-}\n-\n-.projectitem {\n-    margin-top: 60px;\n-    color: rgb(100, 101, 106);\n-    padding-bottom: 60px;\n-    border-bottom: 1px solid #d8d8d9;\n-\n-    .imgwrap {\n-        img {\n-            width: 100%;\n-        }\n-    }\n-\n-    p {\n-        font-size: 14px;\n-        line-height: 24px;\n-        margin-bottom: 20px;\n-    }\n-\n-    .subtitle {\n-        font-weight: 600;\n-        letter-spacing: 1px;\n-        text-transform: uppercase;\n-        font-size: 18px;\n-        margin-bottom: 30px;\n-\n-    }\n-\n-    .title {\n-        font-weight: 600;\n-        letter-spacing: 1px;\n-        text-transform: uppercase;\n-        font-size: 30px;\n-        line-height: 40px;\n-        margin-bottom: 5px;\n-\n-    }\n-\n-    &:nth-child(even) {\n-        opacity: 0.5;\n-    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721805939214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,5 +103,12 @@\n        .row {\n         flex-direction: row-reverse;\n        }\n     }\n+}\n+\n+@media(max-width:1199.8px) {\n+\n+\n+\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721805974839,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,8 +107,10 @@\n }\n \n @media(max-width:1199.8px) {\n \n+    .projectssections__greybox {\n+        padding: 50px 60px;\n+    }\n \n \n-    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721805985705,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,6 +111,18 @@\n     .projectssections__greybox {\n         padding: 50px 60px;\n     }\n \n+    .projectssections__greybox .prlogo {\n+        max-width: 200px;\n+    }\n \n+\n+\n+\n+\n+\n+\n+\n+\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721805990877,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,8 +113,9 @@\n     }\n \n     .projectssections__greybox .prlogo {\n         max-width: 200px;\n+        margin-bottom: 30px;\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1721805996654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,10 +112,10 @@\n         padding: 50px 60px;\n     }\n \n     .projectssections__greybox .prlogo {\n-        max-width: 200px;\n-        margin-bottom: 30px;\n+        max-width: 220px;\n+        margin-bottom: 20px;\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1721806036447,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,132 @@\n+.projectssections {\n+    padding: 75px 0;\n+}\n+\n+.projectssections__content {\n+    margin: 0 auto;\n+    max-width: 1040px;\n+    width: 100%;\n+}\n+\n+.projectssections__greybox {\n+    padding: 80px 125px;\n+    background: #f1f1f2;\n+\n+    img {\n+        max-width: 100%;\n+    }\n+\n+    .prlogo {\n+        max-width: 270px;\n+        display: block;\n+        margin: 0 auto 40px;\n+    }\n+\n+    p {\n+        color: #3c3c3c;\n+        font-size: 14px;\n+        line-height: 26px;\n+    }\n+\n+    .row {\n+        margin-top: 50px;\n+    }\n+\n+    .imgwrap {\n+        height: 240px;\n+        position: relative;\n+        margin-bottom: 20px;\n+\n+        img {\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 50% 50%;\n+        }\n+    }\n+\n+    h4 {\n+        color: #3c3c3c;\n+        font-weight: 600;\n+        font-size: 18px;\n+        letter-spacing: 1.6px;\n+        line-height: 28px;\n+        margin: 30px 0 15px;\n+        text-align: center;\n+        text-transform: uppercase;\n+    }\n+\n+}\n+\n+.projectitem {\n+    margin-top: 60px;\n+    color: rgb(100, 101, 106);\n+    padding-bottom: 60px;\n+    border-bottom: 1px solid #d8d8d9;\n+\n+    &:last-child {\n+        border-bottom: none;\n+    }\n+\n+    .imgwrap {\n+        img {\n+            width: 100%;\n+        }\n+    }\n+\n+    p {\n+        font-size: 14px;\n+        line-height: 24px;\n+        margin-bottom: 20px;\n+    }\n+\n+    .subtitle {\n+        font-weight: 600;\n+        letter-spacing: 1px;\n+        text-transform: uppercase;\n+        font-size: 18px;\n+        margin-bottom: 30px;\n+\n+    }\n+\n+    .title {\n+        font-weight: 600;\n+        letter-spacing: 1px;\n+        text-transform: uppercase;\n+        font-size: 30px;\n+        line-height: 40px;\n+        margin-bottom: 5px;\n+\n+    }\n+\n+    &:nth-child(even) {\n+       .row {\n+        flex-direction: row-reverse;\n+       }\n+    }\n+}\n+\n+@media(max-width:1199.8px) {\n+\n+    .projectssections__greybox {\n+        padding: 50px 60px;\n+    }\n+\n+    .projectssections__greybox .prlogo {\n+        max-width: 220px;\n+        margin-bottom: 20px;\n+    }\n+\n+    .projectitem .subtitle {\n+        font-size: 16px;\n+    }\n+\n+\n+\n+\n+\n+\n+\n+\n+\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721806047916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,144 +118,18 @@\n     }\n \n     .projectitem .subtitle {\n         font-size: 16px;\n-    }\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-}\n-.projectssections {\n-    padding: 75px 0;\n-}\n-\n-.projectssections__content {\n-    margin: 0 auto;\n-    max-width: 1040px;\n-    width: 100%;\n-}\n-\n-.projectssections__greybox {\n-    padding: 80px 125px;\n-    background: #f1f1f2;\n-\n-    img {\n-        max-width: 100%;\n-    }\n-\n-    .prlogo {\n-        max-width: 270px;\n-        display: block;\n-        margin: 0 auto 40px;\n-    }\n-\n-    p {\n-        color: #3c3c3c;\n-        font-size: 14px;\n-        line-height: 26px;\n-    }\n-\n-    .row {\n-        margin-top: 50px;\n-    }\n-\n-    .imgwrap {\n-        height: 240px;\n-        position: relative;\n         margin-bottom: 20px;\n-\n-        img {\n-            width: 100%;\n-            height: 100%;\n-            object-fit: cover;\n-            object-position: 50% 50%;\n-        }\n     }\n \n-    h4 {\n-        color: #3c3c3c;\n-        font-weight: 600;\n-        font-size: 18px;\n-        letter-spacing: 1.6px;\n-        line-height: 28px;\n-        margin: 30px 0 15px;\n-        text-align: center;\n-        text-transform: uppercase;\n+    .projectitem .title {\n+        font-size: 26px;\n     }\n \n-}\n \n-.projectitem {\n-    margin-top: 60px;\n-    color: rgb(100, 101, 106);\n-    padding-bottom: 60px;\n-    border-bottom: 1px solid #d8d8d9;\n \n-    &:last-child {\n-        border-bottom: none;\n-    }\n \n-    .imgwrap {\n-        img {\n-            width: 100%;\n-        }\n-    }\n \n-    p {\n-        font-size: 14px;\n-        line-height: 24px;\n-        margin-bottom: 20px;\n-    }\n \n-    .subtitle {\n-        font-weight: 600;\n-        letter-spacing: 1px;\n-        text-transform: uppercase;\n-        font-size: 18px;\n-        margin-bottom: 30px;\n \n-    }\n-\n-    .title {\n-        font-weight: 600;\n-        letter-spacing: 1px;\n-        text-transform: uppercase;\n-        font-size: 30px;\n-        line-height: 40px;\n-        margin-bottom: 5px;\n-\n-    }\n-\n-    &:nth-child(even) {\n-       .row {\n-        flex-direction: row-reverse;\n-       }\n-    }\n-}\n-\n-@media(max-width:1199.8px) {\n-\n-    .projectssections__greybox {\n-        padding: 50px 60px;\n-    }\n-\n-    .projectssections__greybox .prlogo {\n-        max-width: 220px;\n-        margin-bottom: 20px;\n-    }\n-\n-\n-\n-\n-\n-\n-\n-\n-\n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721806054079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -123,8 +123,9 @@\n     }\n \n     .projectitem .title {\n         font-size: 26px;\n+        line-height: 140%;\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1721806064442,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,138 @@\n+.projectssections {\n+    padding: 75px 0;\n+}\n+\n+.projectssections__content {\n+    margin: 0 auto;\n+    max-width: 1040px;\n+    width: 100%;\n+}\n+\n+.projectssections__greybox {\n+    padding: 80px 125px;\n+    background: #f1f1f2;\n+\n+    img {\n+        max-width: 100%;\n+    }\n+\n+    .prlogo {\n+        max-width: 270px;\n+        display: block;\n+        margin: 0 auto 40px;\n+    }\n+\n+    p {\n+        color: #3c3c3c;\n+        font-size: 14px;\n+        line-height: 26px;\n+    }\n+\n+    .row {\n+        margin-top: 50px;\n+    }\n+\n+    .imgwrap {\n+        height: 240px;\n+        position: relative;\n+        margin-bottom: 20px;\n+\n+        img {\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 50% 50%;\n+        }\n+    }\n+\n+    h4 {\n+        color: #3c3c3c;\n+        font-weight: 600;\n+        font-size: 18px;\n+        letter-spacing: 1.6px;\n+        line-height: 28px;\n+        margin: 30px 0 15px;\n+        text-align: center;\n+        text-transform: uppercase;\n+    }\n+\n+}\n+\n+.projectitem {\n+    margin-top: 60px;\n+    color: rgb(100, 101, 106);\n+    padding-bottom: 60px;\n+    border-bottom: 1px solid #d8d8d9;\n+\n+    &:last-child {\n+        border-bottom: none;\n+    }\n+\n+    .imgwrap {\n+        img {\n+            width: 100%;\n+        }\n+    }\n+\n+    p {\n+        font-size: 14px;\n+        line-height: 24px;\n+        margin-bottom: 20px;\n+    }\n+\n+    .subtitle {\n+        font-weight: 600;\n+        letter-spacing: 1px;\n+        text-transform: uppercase;\n+        font-size: 18px;\n+        margin-bottom: 30px;\n+\n+    }\n+\n+    .title {\n+        font-weight: 600;\n+        letter-spacing: 1px;\n+        text-transform: uppercase;\n+        font-size: 30px;\n+        line-height: 40px;\n+        margin-bottom: 5px;\n+\n+    }\n+\n+    &:nth-child(even) {\n+       .row {\n+        flex-direction: row-reverse;\n+       }\n+    }\n+}\n+\n+@media(max-width:1199.8px) {\n+\n+    .projectssections__greybox {\n+        padding: 50px 60px;\n+    }\n+\n+    .projectssections__greybox .prlogo {\n+        max-width: 220px;\n+        margin-bottom: 20px;\n+    }\n+\n+    .projectitem .subtitle {\n+        font-size: 16px;\n+        margin-bottom: 20px;\n+    }\n+\n+    .projectitem .title {\n+        font-size: 26px;\n+        line-height: 140%;\n+    }\n+\n+    .projectitem {\n+        padding-bottom: 30px;\n+    }\n+\n+\n+\n+\n+\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721806267014,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -133,142 +133,5 @@\n \n \n \n \n-\n-}\n-.projectssections {\n-    padding: 75px 0;\n-}\n-\n-.projectssections__content {\n-    margin: 0 auto;\n-    max-width: 1040px;\n-    width: 100%;\n-}\n-\n-.projectssections__greybox {\n-    padding: 80px 125px;\n-    background: #f1f1f2;\n-\n-    img {\n-        max-width: 100%;\n-    }\n-\n-    .prlogo {\n-        max-width: 270px;\n-        display: block;\n-        margin: 0 auto 40px;\n-    }\n-\n-    p {\n-        color: #3c3c3c;\n-        font-size: 14px;\n-        line-height: 26px;\n-    }\n-\n-    .row {\n-        margin-top: 50px;\n-    }\n-\n-    .imgwrap {\n-        height: 240px;\n-        position: relative;\n-        margin-bottom: 20px;\n-\n-        img {\n-            width: 100%;\n-            height: 100%;\n-            object-fit: cover;\n-            object-position: 50% 50%;\n-        }\n-    }\n-\n-    h4 {\n-        color: #3c3c3c;\n-        font-weight: 600;\n-        font-size: 18px;\n-        letter-spacing: 1.6px;\n-        line-height: 28px;\n-        margin: 30px 0 15px;\n-        text-align: center;\n-        text-transform: uppercase;\n-    }\n-\n-}\n-\n-.projectitem {\n-    margin-top: 60px;\n-    color: rgb(100, 101, 106);\n-    padding-bottom: 60px;\n-    border-bottom: 1px solid #d8d8d9;\n-\n-    &:last-child {\n-        border-bottom: none;\n-    }\n-\n-    .imgwrap {\n-        img {\n-            width: 100%;\n-        }\n-    }\n-\n-    p {\n-        font-size: 14px;\n-        line-height: 24px;\n-        margin-bottom: 20px;\n-    }\n-\n-    .subtitle {\n-        font-weight: 600;\n-        letter-spacing: 1px;\n-        text-transform: uppercase;\n-        font-size: 18px;\n-        margin-bottom: 30px;\n-\n-    }\n-\n-    .title {\n-        font-weight: 600;\n-        letter-spacing: 1px;\n-        text-transform: uppercase;\n-        font-size: 30px;\n-        line-height: 40px;\n-        margin-bottom: 5px;\n-\n-    }\n-\n-    &:nth-child(even) {\n-       .row {\n-        flex-direction: row-reverse;\n-       }\n-    }\n-}\n-\n-@media(max-width:1199.8px) {\n-\n-    .projectssections__greybox {\n-        padding: 50px 60px;\n-    }\n-\n-    .projectssections__greybox .prlogo {\n-        max-width: 220px;\n-        margin-bottom: 20px;\n-    }\n-\n-    .projectitem .subtitle {\n-        font-size: 16px;\n-        margin-bottom: 20px;\n-    }\n-\n-    .projectitem .title {\n-        font-size: 26px;\n-        line-height: 140%;\n-    }\n-\n-\n-\n-\n-\n-\n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721806487432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,8 +105,12 @@\n        }\n     }\n }\n \n+.projectsslider {\n+    margin-top: 30px;\n+}\n+\n @media(max-width:1199.8px) {\n \n     .projectssections__greybox {\n         padding: 50px 60px;\n"
+                },
+                {
+                    "date": 1721806508781,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -134,8 +134,10 @@\n     .projectitem {\n         padding-bottom: 30px;\n     }\n \n+    .projectssections__greybox .imgwrap {\n+        height: 350px;\n+    }\n \n \n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721806518306,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,6 +138,9 @@\n     .projectssections__greybox .imgwrap {\n         height: 350px;\n     }\n \n+    .projectsslider {\n+        padding-bottom: 50px;\n+    }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721806529141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -140,7 +140,11 @@\n     }\n \n     .projectsslider {\n         padding-bottom: 50px;\n+\n+        .swiper-pagination-bullet-active {\n+            background: #3c3c3c;\n+        }\n     }\n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721806555515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,9 +135,9 @@\n         padding-bottom: 30px;\n     }\n \n     .projectssections__greybox .imgwrap {\n-        height: 350px;\n+        height: 500px;\n     }\n \n     .projectsslider {\n         padding-bottom: 50px;\n"
+                },
+                {
+                    "date": 1721806595771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,5 +146,9 @@\n             background: #3c3c3c;\n         }\n     }\n \n+    .projectitem .imgwrap {\n+        margin-bottom: 20px;\n+    }\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721806644813,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -151,12 +151,5 @@\n         margin-bottom: 20px;\n     }\n \n \n-\n-\n-\n-\n-\n-    \n-\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1721804264098,
+            "name": "Commit-0",
+            "content": ".projectssections__contant {\n    \n}"
+        }
+    ]
+}

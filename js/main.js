@@ -91,4 +91,24 @@ $(document).ready(function () {
 
 
 
+
+    // PROJECTS - slider
+    var swiper = new Swiper(".projectsslider", {
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        breakpoints: {
+           
+            991: {
+              slidesPerView: 3,
+              spaceBetween: 30,
+            },
+          },
+    });
+
+
 })

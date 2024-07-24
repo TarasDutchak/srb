@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 2,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1721745933719,
@@ -16,6 +16,34 @@
                 {
                     "date": 1721747728984,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n \r\n :root {\r\n     --theme-text-color: #64656a;\r\n+    --theme-background-color: #4b4b4d;\r\n }\r\n \r\n html {\r\n     box-sizing: border-box;\r\n"
+                },
+                {
+                    "date": 1721804737343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-\r\n :root {\r\n     --theme-text-color: #64656a;\r\n     --theme-background-color: #4b4b4d;\r\n }\r\n@@ -63,9 +62,9 @@\n \r\n     &.p0 {\r\n         padding-top: 0;\r\n     }\r\n-    \r\n+\r\n }\r\n \r\n button {\r\n     outline: none;\r\n@@ -111,7 +110,10 @@\n }\r\n \r\n a {\r\n     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);\r\n--webkit-tap-highlight-color: transparent;\r\n+    -webkit-tap-highlight-color: transparent;\r\n }\r\n \r\n+p {\r\n+    letter-spacing: .5px;\r\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721806919224,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n h3,\r\n h4,\r\n h5,\r\n h6 {\r\n-    margin: 0;\r\n+    margin-top: 0;\r\n     padding: 0;\r\n }\r\n \r\n body {\r\n"
+                },
+                {
+                    "date": 1721806930318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,9 +42,9 @@\n h3,\r\n h4,\r\n h5,\r\n h6 {\r\n-    margin-top: 0;\r\n+    margin: 0;\r\n     padding: 0;\r\n }\r\n \r\n body {\r\n"
+                },
+                {
+                    "date": 1721807726250,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,5 +115,11 @@\n }\r\n \r\n p {\r\n     letter-spacing: .5px;\r\n+}\r\n+\r\n+.smcontainer {\r\n+    max-width: 1290px;\r\n+    margin: 0 auto;\r\n+    padding: 0 25px;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721808213110,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,8 +108,31 @@\n         color: #fff;\r\n     }\r\n }\r\n \r\n+.greybtn {\r\n+    height: 38px;\r\n+    width: 190px;\r\n+    display: inline-flex;\r\n+    align-items: center;\r\n+    justify-content: center;\r\n+    text-transform: uppercase;\r\n+    color: #fff;\r\n+    border: 1px solid #64656a;\r\n+    background: #64656a;\r\n+    font-family: 'Loew';\r\n+    font-weight: 600;\r\n+    font-size: 12px;\r\n+    cursor: pointer;\r\n+    letter-spacing: 1px;\r\n+    transition: 0.5s;\r\n+\r\n+    &:hover {\r\n+        background: #fff;\r\n+        color: #64656a;\r\n+    }\r\n+}\r\n+\r\n a {\r\n     -webkit-tap-highlight-color: rgba(255, 255, 255, 0);\r\n     -webkit-tap-highlight-color: transparent;\r\n }\r\n"
+                },
+                {
+                    "date": 1721808247154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,9 +119,9 @@\n     color: #fff;\r\n     border: 1px solid #64656a;\r\n     background: #64656a;\r\n     font-family: 'Loew';\r\n-    font-weight: 600;\r\n+    font-weight: 500;\r\n     font-size: 12px;\r\n     cursor: pointer;\r\n     letter-spacing: 1px;\r\n     transition: 0.5s;\r\n"
+                },
+                {
+                    "date": 1721808511175,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,5 +144,11 @@\n .smcontainer {\r\n     max-width: 1290px;\r\n     margin: 0 auto;\r\n     padding: 0 25px;\r\n+}\r\n+\r\n+@media(max-width:991.8px) {\r\n+    .smcontainer {\r\n+        padding: 0;\r\n+    }\r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1721745933719,

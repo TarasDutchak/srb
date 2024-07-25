@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 24,
+            "activePatchIndex": 25,
             "patches": [
                 {
                     "date": 1721745642702,
@@ -104,6 +104,10 @@
                 {
                     "date": 1721895712614,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n             <li><a href=\"classics.html\" target=\"_blank\">Property - Classics</a></li>\n             <li><a href=\"projects.html\" target=\"_blank\">Property - Projects</a></li>\n             <li><a href=\"sellwithus.html\" target=\"_blank\">Property - Sell With Us</a></li>\n             <li><a href=\"product.html\" target=\"_blank\">Product page</a></li>\n+            <li><a href=\"about-team.html\" target=\"_blank\">About / Team</a></li>\n             \n-            \n         </ul>\n     </div>\n \n \n"
+                },
+                {
+                    "date": 1721930911803,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             <li><a href=\"projects.html\" target=\"_blank\">Property - Projects</a></li>\n             <li><a href=\"sellwithus.html\" target=\"_blank\">Property - Sell With Us</a></li>\n             <li><a href=\"product.html\" target=\"_blank\">Product page</a></li>\n             <li><a href=\"about-team.html\" target=\"_blank\">About / Team</a></li>\n-            \n+            <li><a href=\"team-open.html\" target=\"_blank\">Team (open)</a></li>\n         </ul>\n     </div>\n \n \n"
                 }
             ],
             "date": 1721745642702,

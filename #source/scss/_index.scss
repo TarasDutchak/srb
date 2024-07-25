@@ -479,6 +479,17 @@
 
 }
 
+.propertyboxes .propertybox a {
+    position: relative;
+    overflow: hidden;
+
+    &:hover {
+        .propertybox__pic {
+            transform: scale(1.01);
+        }
+    }
+}
+
 .propertybox__pic {
     position: absolute;
     left: 0;
@@ -487,6 +498,8 @@
     object-position: 50% 50%;
     width: 100%;
     height: 100%;
+    transition: 0.5s;
+    transform: scale(1.1);
 }
 
 .filterbtn {
@@ -503,7 +516,7 @@
     }
 }
 
-@media(max-width:1400.8px)  {
+@media(max-width:1400.8px) {
 
     .filtersection__box {
         margin: 0 5px 10px 5px;

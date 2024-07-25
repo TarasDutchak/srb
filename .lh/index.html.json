@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 10,
             "patches": [
                 {
                     "date": 1721744912529,
@@ -44,6 +44,10 @@
                 {
                     "date": 1721747176040,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -403,12 +403,8 @@\n                     <div class=\"row\">\r\n                         <section class=\"propertybox\" data-aos=\"fade-up\" data-aos-delay=\"100\">\r\n                             <a href=\"#\">\r\n                                 <img class=\"propertybox__pic\" src=\"img/property/propertyimg1.jpeg\" alt=\"img\">\r\n-                                <div class=\"soldimg\">\r\n-                                    <img src=\"img/property/sold.png\" alt=\"img\">\r\n-                                </div>\r\n-                                <p class=\"bottinftext\">UNDISCLOSED</p>\r\n                                 <div class=\"description\">\r\n                                     <h6>25 Byron Street, CARNEGIE </h6>\r\n                                     <ul>\r\n                                         <li>2 beds</li>\r\n"
+                },
+                {
+                    "date": 1721890268197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -575,10 +575,8 @@\n                     <div class=\"text-center\">\r\n                         <button class=\"gnrbtn\">\r\n                             Load More\r\n                         </button>\r\n-\r\n-\r\n                     </div>\r\n                 </div>\r\n             </div>\r\n         </div>\r\n"
                 }
             ],
             "date": 1721744912529,

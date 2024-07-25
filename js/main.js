@@ -115,6 +115,10 @@ $(document).ready(function () {
         spaceBetween: 20,
         loop: true,
         speed: 1200,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
 
         navigation: {
             nextEl: ".swiper-button-next",
@@ -122,12 +126,41 @@ $(document).ready(function () {
         },
     });
 
-    $('.ddlink p').click(function(){
+    $('.ddlink p').click(function () {
         $(this).next('ul').slideToggle();
     })
 
-    Fancybox.bind("[data-fancybox]", {
-        // Your custom options
-      });
+    if ($('[data-fancybox]').length) {
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+    }
+
+    // about page - add dark theme
+    if ($('#team').length) {
+        window.addEventListener('scroll', function () {
+            var team = document.getElementById('team');
+            var rect = team.getBoundingClientRect();
+            var windowHeight = window.innerHeight;
+
+            if (rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2) {
+                document.body.classList.add('darktheme');
+            } else {
+                document.body.classList.remove('darktheme');
+            }
+        });
+
+        var team = document.getElementById('team');
+        var rect = team.getBoundingClientRect();
+        var windowHeight = window.innerHeight;
+
+        if (rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2) {
+            document.body.classList.add('darktheme');
+        } else {
+            document.body.classList.remove('darktheme');
+        }
+    }
+
+
 
 })

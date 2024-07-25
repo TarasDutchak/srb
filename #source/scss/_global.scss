@@ -45,6 +45,7 @@ h5,
 h6 {
     margin: 0;
     padding: 0;
+    line-height: 150%;
 }
 
 body {
@@ -151,4 +152,53 @@ p {
     .smcontainer {
         padding: 0;
     }
+}
+
+.hoverline {
+    position: relative;
+
+    &::after {
+        background-color: var(--theme-text-color);
+        bottom: 0;
+        content: "";
+        height: 1px;
+        left: 0;
+        position: absolute;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: bottom right;
+        transform-origin: bottom right;
+        -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+        transition: -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+        transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+        transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+        width: 100%;
+    }
+
+    &:hover {
+        &::after {
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transform-origin: bottom left;
+            transform-origin: bottom left;
+        }
+    }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+img {
+    max-width: 100%;
+}
+
+.greybg {
+    background: #f1f1f2;
 }

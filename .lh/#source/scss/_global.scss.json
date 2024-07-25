@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 14,
             "patches": [
                 {
                     "date": 1721745933719,
@@ -44,6 +44,26 @@
                 {
                     "date": 1721808511175,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,5 +144,11 @@\n .smcontainer {\r\n     max-width: 1290px;\r\n     margin: 0 auto;\r\n     padding: 0 25px;\r\n+}\r\n+\r\n+@media(max-width:991.8px) {\r\n+    .smcontainer {\r\n+        padding: 0;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721888335350,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -150,5 +150,36 @@\n @media(max-width:991.8px) {\r\n     .smcontainer {\r\n         padding: 0;\r\n     }\r\n+}\r\n+\r\n+.hoverline {\r\n+    position: relative;\r\n+\r\n+    &::after {\r\n+        background-color: var(--theme-text-color);\r\n+        bottom: 0;\r\n+        content: \"\";\r\n+        height: 1px;\r\n+        left: 0;\r\n+        position: absolute;\r\n+        -webkit-transform: scaleX(0);\r\n+        transform: scaleX(0);\r\n+        -webkit-transform-origin: bottom right;\r\n+        transform-origin: bottom right;\r\n+        -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);\r\n+        transition: -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);\r\n+        transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);\r\n+        transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);\r\n+        width: 100%;\r\n+    }\r\n+\r\n+    &:hover {\r\n+        &::after {\r\n+            -webkit-transform: scaleX(1);\r\n+            transform: scaleX(1);\r\n+            -webkit-transform-origin: bottom left;\r\n+            transform-origin: bottom left;\r\n+        }\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721888893506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -181,5 +181,17 @@\n             -webkit-transform-origin: bottom left;\r\n             transform-origin: bottom left;\r\n         }\r\n     }\r\n+}\r\n+\r\n+/* Chrome, Safari, Edge, Opera */\r\n+input::-webkit-outer-spin-button,\r\n+input::-webkit-inner-spin-button {\r\n+  -webkit-appearance: none;\r\n+  margin: 0;\r\n+}\r\n+\r\n+/* Firefox */\r\n+input[type=number] {\r\n+  -moz-appearance: textfield;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721892644471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -183,15 +183,17 @@\n         }\r\n     }\r\n }\r\n \r\n-/* Chrome, Safari, Edge, Opera */\r\n input::-webkit-outer-spin-button,\r\n input::-webkit-inner-spin-button {\r\n   -webkit-appearance: none;\r\n   margin: 0;\r\n }\r\n \r\n-/* Firefox */\r\n input[type=number] {\r\n   -moz-appearance: textfield;\r\n+}\r\n+\r\n+img {\r\n+    max-width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721895895514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,5 +195,9 @@\n }\r\n \r\n img {\r\n     max-width: 100%;\r\n+}\r\n+\r\n+.greybg {\r\n+    background: #f1f1f2;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721899010607,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -44,8 +44,9 @@\n h5,\r\n h6 {\r\n     margin: 0;\r\n     padding: 0;\r\n+    line-height: 150%;\r\n }\r\n \r\n body {\r\n     margin: 0;\r\n"
                 }
             ],
             "date": 1721745933719,

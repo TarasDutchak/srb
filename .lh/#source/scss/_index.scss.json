@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 26,
+            "activePatchIndex": 28,
             "patches": [
                 {
                     "date": 1721746047574,
@@ -112,6 +112,14 @@
                 {
                     "date": 1721891835780,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -477,8 +477,9 @@\n         width: 115px;\r\n     }\r\n \r\n }\r\n+\r\n .propertyboxes .propertybox a {\r\n     position: relative;\r\n     overflow: hidden;\r\n \r\n@@ -496,9 +497,9 @@\n     object-fit: cover;\r\n     object-position: 50% 50%;\r\n     width: 100%;\r\n     height: 100%;\r\n-    transition: 0.3s;\r\n+    transition: 0.5s;\r\n     transform: scale(1.1);\r\n }\r\n \r\n .filterbtn {\r\n@@ -514,9 +515,9 @@\n         top: calc(100% + 10px);\r\n     }\r\n }\r\n \r\n-@media(max-width:1400.8px)  {\r\n+@media(max-width:1400.8px) {\r\n \r\n     .filtersection__box {\r\n         margin: 0 5px 10px 5px;\r\n     }\r\n"
+                },
+                {
+                    "date": 1722058049281,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -106,8 +106,12 @@\n     padding: 0;\r\n     outline: none;\r\n     background: transparent;\r\n     border: none;\r\n+\r\n+    img {\r\n+        max-width: 26px;\r\n+    }\r\n }\r\n \r\n \r\n .mainvideosection {\r\n"
+                },
+                {
+                    "date": 1722058304228,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,9 +107,9 @@\n     outline: none;\r\n     background: transparent;\r\n     border: none;\r\n \r\n-    img {\r\n+    img, svg {\r\n         max-width: 26px;\r\n     }\r\n }\r\n \r\n@@ -611,14 +611,17 @@\n         padding-left: 0;\r\n         padding-right: 0;\r\n     }\r\n \r\n+    .headermobsect .pagesideline__soclist li img,\r\n+    .headermobsect .pagesideline__soclist li svg {\r\n+        max-width: 20px;\r\n+    }\r\n \r\n \r\n \r\n \r\n \r\n-\r\n     .propertyboxes .propertybox:nth-child(6n),\r\n     .propertyboxes .propertybox:nth-child(6n+1),\r\n     .propertyboxes .propertybox {\r\n         max-width: 100%;\r\n"
                 }
             ],
             "date": 1721746047574,

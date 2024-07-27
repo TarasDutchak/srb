@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 34,
+            "activePatchIndex": 49,
             "patches": [
                 {
                     "date": 1721744901972,
@@ -144,6 +144,66 @@
                 {
                     "date": 1721894476684,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -137,34 +137,30 @@\n     }\r\n \r\n     // about page - add dark theme\r\n     if ($('#team').length) {\r\n-        window.addEventListener('scroll', function() {\r\n+        window.addEventListener('scroll', function () {\r\n             var team = document.getElementById('team');\r\n             var rect = team.getBoundingClientRect();\r\n             var windowHeight = window.innerHeight;\r\n-      \r\n+\r\n             if (rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2) {\r\n-              document.body.classList.add('darktheme');\r\n+                document.body.classList.add('darktheme');\r\n             } else {\r\n-              document.body.classList.remove('darktheme');\r\n+                document.body.classList.remove('darktheme');\r\n             }\r\n-          });\r\n-          \r\n-        window.addEventListener('scroll', function() {\r\n-            var team = document.getElementById('team');\r\n-            var rect = team.getBoundingClientRect();\r\n-            var windowHeight = window.innerHeight;\r\n-      \r\n-            if (rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2) {\r\n-              document.body.classList.add('darktheme');\r\n-            } else {\r\n-              document.body.classList.remove('darktheme');\r\n-            }\r\n-          });\r\n+        });\r\n \r\n-          \r\n+        var team = document.getElementById('team');\r\n+        var rect = team.getBoundingClientRect();\r\n+        var windowHeight = window.innerHeight;\r\n+\r\n+        if (rect.top <= windowHeight / 2 && rect.bottom >= windowHeight / 2) {\r\n+            document.body.classList.add('darktheme');\r\n+        } else {\r\n+            document.body.classList.remove('darktheme');\r\n+        }\r\n     }\r\n-    \r\n-    \r\n \r\n+\r\n+\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721979293403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,6 +161,24 @@\n         }\r\n     }\r\n \r\n \r\n+    // offices sliders\r\n+    var swiper = new Swiper(\".officessl\", {\r\n+        slidesPerView: 1,\r\n+        spaceBetween: 20,\r\n+        loop: true,\r\n+        pagination: {\r\n+            el: \".swiper-pagination\",\r\n+            clickable: true,\r\n+        },\r\n+        breakpoints: {\r\n \r\n+            991: {\r\n+                slidesPerView: 3,\r\n+                spaceBetween: 30,\r\n+            },\r\n+        },\r\n+    });\r\n+\r\n+\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721979299278,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -164,9 +164,9 @@\n \r\n     // offices sliders\r\n     var swiper = new Swiper(\".officessl\", {\r\n         slidesPerView: 1,\r\n-        spaceBetween: 20,\r\n+        spaceBetween: 10,\r\n         loop: true,\r\n         pagination: {\r\n             el: \".swiper-pagination\",\r\n             clickable: true,\r\n"
+                },
+                {
+                    "date": 1721979306473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -166,18 +166,15 @@\n     var swiper = new Swiper(\".officessl\", {\r\n         slidesPerView: 1,\r\n         spaceBetween: 10,\r\n         loop: true,\r\n-        pagination: {\r\n-            el: \".swiper-pagination\",\r\n-            clickable: true,\r\n-        },\r\n+        \r\n         breakpoints: {\r\n \r\n-            991: {\r\n-                slidesPerView: 3,\r\n-                spaceBetween: 30,\r\n-            },\r\n+            // 991: {\r\n+            //     slidesPerView: 3,\r\n+            //     spaceBetween: 30,\r\n+            // },\r\n         },\r\n     });\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1721979406134,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -166,8 +166,13 @@\n     var swiper = new Swiper(\".officessl\", {\r\n         slidesPerView: 1,\r\n         spaceBetween: 10,\r\n         loop: true,\r\n+\r\n+        navigation: {\r\n+            nextEl: \".swiper-button-next\",\r\n+            prevEl: \".swiper-button-prev\",\r\n+        },\r\n         \r\n         breakpoints: {\r\n \r\n             // 991: {\r\n"
+                },
+                {
+                    "date": 1721979447358,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -165,9 +165,9 @@\n     // offices sliders\r\n     var swiper = new Swiper(\".officessl\", {\r\n         slidesPerView: 1,\r\n         spaceBetween: 10,\r\n-        loop: true,\r\n+        // loop: true,\r\n \r\n         navigation: {\r\n             nextEl: \".swiper-button-next\",\r\n             prevEl: \".swiper-button-prev\",\r\n"
+                },
+                {
+                    "date": 1721979453379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -165,9 +165,8 @@\n     // offices sliders\r\n     var swiper = new Swiper(\".officessl\", {\r\n         slidesPerView: 1,\r\n         spaceBetween: 10,\r\n-        // loop: true,\r\n \r\n         navigation: {\r\n             nextEl: \".swiper-button-next\",\r\n             prevEl: \".swiper-button-prev\",\r\n"
+                },
+                {
+                    "date": 1721984605171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -180,6 +180,11 @@\n             // },\r\n         },\r\n     });\r\n \r\n+    // side forms\r\n+    $('.b-f1').click(function(){\r\n \r\n+    });\r\n+\r\n+\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721984626297,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -182,9 +182,9 @@\n     });\r\n \r\n     // side forms\r\n     $('.b-f1').click(function(){\r\n-\r\n+        $('.bgbox').addClass('show');\r\n     });\r\n \r\n \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721984646688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -183,8 +183,9 @@\n \r\n     // side forms\r\n     $('.b-f1').click(function(){\r\n         $('.bgbox').addClass('show');\r\n+        $('.sideform.f1').addClass('show');\r\n     });\r\n \r\n \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721984657475,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -181,9 +181,10 @@\n         },\r\n     });\r\n \r\n     // side forms\r\n-    $('.b-f1').click(function(){\r\n+    $('.b-f1').click(function(e){\r\n+        e.preventDefault;\r\n         $('.bgbox').addClass('show');\r\n         $('.sideform.f1').addClass('show');\r\n     });\r\n \r\n"
+                },
+                {
+                    "date": 1721984717422,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -182,11 +182,15 @@\n     });\r\n \r\n     // side forms\r\n     $('.b-f1').click(function(e){\r\n-        e.preventDefault;\r\n+        e.preventDefault();\r\n         $('.bgbox').addClass('show');\r\n         $('.sideform.f1').addClass('show');\r\n     });\r\n \r\n+    $('.closeform').click(function(){\r\n+        \r\n+    })\r\n \r\n+\r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721984727382,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -188,9 +188,10 @@\n         $('.sideform.f1').addClass('show');\r\n     });\r\n \r\n     $('.closeform').click(function(){\r\n-        \r\n+        $('.bgbox').removeClass('show');\r\n+        $('.sideform.f1').removeClass('show');\r\n     })\r\n \r\n \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721986101879,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -187,8 +187,14 @@\n         $('.bgbox').addClass('show');\r\n         $('.sideform.f1').addClass('show');\r\n     });\r\n \r\n+    $('.b-f2').click(function(e){\r\n+        e.preventDefault();\r\n+        $('.bgbox').addClass('show');\r\n+        $('.sideform.f2').addClass('show');\r\n+    });\r\n+\r\n     $('.closeform').click(function(){\r\n         $('.bgbox').removeClass('show');\r\n         $('.sideform.f1').removeClass('show');\r\n     })\r\n"
+                },
+                {
+                    "date": 1721986280469,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -195,9 +195,9 @@\n     });\r\n \r\n     $('.closeform').click(function(){\r\n         $('.bgbox').removeClass('show');\r\n-        $('.sideform.f1').removeClass('show');\r\n+        $('.sideform').removeClass('show');\r\n     })\r\n \r\n \r\n })\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1721990404535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -193,8 +193,14 @@\n         $('.bgbox').addClass('show');\r\n         $('.sideform.f2').addClass('show');\r\n     });\r\n \r\n+    $('.b-f3').click(function(e){\r\n+        e.preventDefault();\r\n+        $('.bgbox').addClass('show');\r\n+        $('.sideform.f3').addClass('show');\r\n+    });\r\n+\r\n     $('.closeform').click(function(){\r\n         $('.bgbox').removeClass('show');\r\n         $('.sideform').removeClass('show');\r\n     })\r\n"
                 }
             ],
             "date": 1721744901972,

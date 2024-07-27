@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 5,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1721747486263,
@@ -28,6 +28,18 @@
                 {
                     "date": 1721891971243,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n @import \"classics\";\r\n @import \"projects\";\r\n @import \"sellwithus\";\r\n @import \"product\";\r\n+@import \"about-team\";\r\n @import \"header\";\r\n @import \"footer\";\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1721978059543,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n @import \"projects\";\r\n @import \"sellwithus\";\r\n @import \"product\";\r\n @import \"about-team\";\r\n+@import \"offices-contacts\";\r\n @import \"header\";\r\n @import \"footer\";\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1721986551548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n @import \"sellwithus\";\r\n @import \"product\";\r\n @import \"about-team\";\r\n @import \"offices-contacts\";\r\n+@import \"media\";\r\n @import \"header\";\r\n @import \"footer\";\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1721990849976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n @import \"product\";\r\n @import \"about-team\";\r\n @import \"offices-contacts\";\r\n @import \"media\";\r\n+@import \"textpage\";\r\n @import \"header\";\r\n @import \"footer\";\r\n \r\n \r\n"
                 }
             ],
             "date": 1721747486263,

@@ -162,5 +162,48 @@ $(document).ready(function () {
     }
 
 
+    // offices sliders
+    var swiper = new Swiper(".officessl", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        
+        breakpoints: {
+
+            // 991: {
+            //     slidesPerView: 3,
+            //     spaceBetween: 30,
+            // },
+        },
+    });
+
+    // side forms
+    $('.b-f1').click(function(e){
+        e.preventDefault();
+        $('.bgbox').addClass('show');
+        $('.sideform.f1').addClass('show');
+    });
+
+    $('.b-f2').click(function(e){
+        e.preventDefault();
+        $('.bgbox').addClass('show');
+        $('.sideform.f2').addClass('show');
+    });
+
+    $('.b-f3').click(function(e){
+        e.preventDefault();
+        $('.bgbox').addClass('show');
+        $('.sideform.f3').addClass('show');
+    });
+
+    $('.closeform').click(function(){
+        $('.bgbox').removeClass('show');
+        $('.sideform').removeClass('show');
+    })
+
 
 })

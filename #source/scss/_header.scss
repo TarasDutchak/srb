@@ -281,6 +281,17 @@ header.header,
 
     .mobheadbox {
         display: block;
+       
+           img {
+                max-width: 150px;
+                height: auto;
+            }
+    
+            img {
+                max-height: 40px;
+            }
+        
+    
     }
 
     header.header {
@@ -405,9 +416,13 @@ header.header,
 
 @media(max-width:575.8px) {
     .header .mobheadbox {
-        svg {
+        svg, img {
             max-width: 150px;
             height: auto;
+        }
+
+        img {
+            max-height: 40px;
         }
     }
 

@@ -146,7 +146,11 @@
 
         img,
         svg {
-            max-width: 100%;
+            max-width: 500px;
+        }
+
+        img {
+            margin-bottom: 30px;
         }
     }
 
@@ -673,6 +677,11 @@
 
     .propertyboxes .propertybox .description h6 {
         font-size: 18px;
+    }
+
+    .mainvideosection__centerbox .videologo img, .mainvideosection__centerbox .videologo svg {
+        max-width: 250px;
+        margin-bottom: 20px;
     }
 
 }

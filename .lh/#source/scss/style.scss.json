@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 8,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1721747486263,
@@ -40,6 +40,10 @@
                 {
                     "date": 1721990849976,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n @import \"product\";\r\n @import \"about-team\";\r\n @import \"offices-contacts\";\r\n @import \"media\";\r\n+@import \"textpage\";\r\n @import \"header\";\r\n @import \"footer\";\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1722846615978,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n @import \"about-team\";\r\n @import \"offices-contacts\";\r\n @import \"media\";\r\n @import \"textpage\";\r\n+@import \"article\";\r\n @import \"header\";\r\n @import \"footer\";\r\n \r\n \r\n"
                 }
             ],
             "date": 1721747486263,

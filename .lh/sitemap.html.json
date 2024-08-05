@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 28,
+            "activePatchIndex": 29,
             "patches": [
                 {
                     "date": 1721745642702,
@@ -120,6 +120,10 @@
                 {
                     "date": 1721991048076,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n             <li><a href=\"about-team.html\" target=\"_blank\">About / Team</a></li>\n             <li><a href=\"team-open.html\" target=\"_blank\">Team (open)</a></li>\n             <li><a href=\"offices-contacts.html\" target=\"_blank\">Offices / Contacts</a></li>\n             <li><a href=\"media.html\" target=\"_blank\">Media</a></li>\n+            <li><a href=\"textpage.html\" target=\"_blank\">Text page (Privacy, Terms)</a></li>\n         </ul>\n     </div>\n \n \n"
+                },
+                {
+                    "date": 1722846547348,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n             <li><a href=\"team-open.html\" target=\"_blank\">Team (open)</a></li>\n             <li><a href=\"offices-contacts.html\" target=\"_blank\">Offices / Contacts</a></li>\n             <li><a href=\"media.html\" target=\"_blank\">Media</a></li>\n             <li><a href=\"textpage.html\" target=\"_blank\">Text page (Privacy, Terms)</a></li>\n+            <li><a href=\"article.html\" target=\"_blank\">Article</a></li>\n         </ul>\n     </div>\n \n \n"
                 }
             ],
             "date": 1721745642702,

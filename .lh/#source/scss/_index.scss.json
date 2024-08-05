@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 28,
+            "activePatchIndex": 33,
             "patches": [
                 {
                     "date": 1721746047574,
@@ -120,6 +120,26 @@
                 {
                     "date": 1722058304228,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,9 +107,9 @@\n     outline: none;\r\n     background: transparent;\r\n     border: none;\r\n \r\n-    img {\r\n+    img, svg {\r\n         max-width: 26px;\r\n     }\r\n }\r\n \r\n@@ -611,14 +611,17 @@\n         padding-left: 0;\r\n         padding-right: 0;\r\n     }\r\n \r\n+    .headermobsect .pagesideline__soclist li img,\r\n+    .headermobsect .pagesideline__soclist li svg {\r\n+        max-width: 20px;\r\n+    }\r\n \r\n \r\n \r\n \r\n \r\n-\r\n     .propertyboxes .propertybox:nth-child(6n),\r\n     .propertyboxes .propertybox:nth-child(6n+1),\r\n     .propertyboxes .propertybox {\r\n         max-width: 100%;\r\n"
+                },
+                {
+                    "date": 1722844986573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,8 +146,9 @@\n \r\n         img,\r\n         svg {\r\n             max-width: 100%;\r\n+            max-width: 600px;\r\n         }\r\n     }\r\n \r\n     .videodescr {\r\n"
+                },
+                {
+                    "date": 1722844994605,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -146,9 +146,9 @@\n \r\n         img,\r\n         svg {\r\n             max-width: 100%;\r\n-            max-width: 600px;\r\n+            max-width: 500px;\r\n         }\r\n     }\r\n \r\n     .videodescr {\r\n"
+                },
+                {
+                    "date": 1722845003188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,11 +145,14 @@\n         }\r\n \r\n         img,\r\n         svg {\r\n-            max-width: 100%;\r\n             max-width: 500px;\r\n         }\r\n+\r\n+        img {\r\n+            margin-bottom: 20px;\r\n+        }\r\n     }\r\n \r\n     .videodescr {\r\n         color: #fff;\r\n"
+                },
+                {
+                    "date": 1722845125725,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -149,9 +149,9 @@\n             max-width: 500px;\r\n         }\r\n \r\n         img {\r\n-            margin-bottom: 20px;\r\n+            margin-bottom: 30px;\r\n         }\r\n     }\r\n \r\n     .videodescr {\r\n@@ -678,8 +678,12 @@\n     .propertyboxes .propertybox .description h6 {\r\n         font-size: 18px;\r\n     }\r\n \r\n+    .mainvideosection__centerbox .videologo img, .mainvideosection__centerbox .videologo svg {\r\n+        max-width: 300px;\r\n+    }\r\n+\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1722845141432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -679,9 +679,9 @@\n         font-size: 18px;\r\n     }\r\n \r\n     .mainvideosection__centerbox .videologo img, .mainvideosection__centerbox .videologo svg {\r\n-        max-width: 300px;\r\n+        max-width: 250px;\r\n     }\r\n \r\n }\r\n \r\n"
                 }
             ],
             "date": 1721746047574,

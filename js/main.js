@@ -89,42 +89,42 @@ $(document).ready(function () {
         $('body,html').animate({ scrollTop: top }, 800);
     });
 
-
-
-
     // PROJECTS - slider
-    var swiper = new Swiper(".projectsslider", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        breakpoints: {
-
-            991: {
-                slidesPerView: 3,
-                spaceBetween: 30,
+    if ($('.swiper').length) {
+        var swiper = new Swiper(".projectsslider", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
             },
-        },
-    });
+            breakpoints: {
 
-    var swiper = new Swiper(".projectslider", {
-        slidesPerView: 1,
-        spaceBetween: 20,
-        loop: true,
-        speed: 1200,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
+                991: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
+            },
+        });
 
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-    });
+        var swiper = new Swiper(".projectslider", {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: true,
+            speed: 1200,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+
+    }
 
     $('.ddlink p').click(function () {
         $(this).next('ul').slideToggle();
@@ -163,44 +163,46 @@ $(document).ready(function () {
 
 
     // offices sliders
-    var swiper = new Swiper(".officessl", {
-        slidesPerView: 1,
-        spaceBetween: 10,
+    if ($('.swiper').length) {
+        var swiper = new Swiper(".officessl", {
+            slidesPerView: 1,
+            spaceBetween: 10,
 
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        
-        breakpoints: {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
 
-            // 991: {
-            //     slidesPerView: 3,
-            //     spaceBetween: 30,
-            // },
-        },
-    });
+            breakpoints: {
+
+                // 991: {
+                //     slidesPerView: 3,
+                //     spaceBetween: 30,
+                // },
+            },
+        });
+    }
 
     // side forms
-    $('.b-f1').click(function(e){
+    $('.b-f1').click(function (e) {
         e.preventDefault();
         $('.bgbox').addClass('show');
         $('.sideform.f1').addClass('show');
     });
 
-    $('.b-f2').click(function(e){
+    $('.b-f2').click(function (e) {
         e.preventDefault();
         $('.bgbox').addClass('show');
         $('.sideform.f2').addClass('show');
     });
 
-    $('.b-f3').click(function(e){
+    $('.b-f3').click(function (e) {
         e.preventDefault();
         $('.bgbox').addClass('show');
         $('.sideform.f3').addClass('show');
     });
 
-    $('.closeform').click(function(){
+    $('.closeform').click(function () {
         $('.bgbox').removeClass('show');
         $('.sideform').removeClass('show');
     })

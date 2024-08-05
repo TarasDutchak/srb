@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 41,
+            "activePatchIndex": 43,
             "patches": [
                 {
                     "date": 1721747681623,
@@ -172,6 +172,14 @@
                 {
                     "date": 1721808466270,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,21 +74,22 @@\n     \n         .pagesideline__soclist li a svg path {\n             fill: #fff;\n         }\n+        .filterbtn {\n+            color: #fff;\n+        }\n+    \n+        .filterbtn img {\n+            filter: contrast(0);\n+        }\n+    \n+        .footer .socials li svg path {\n+            fill: #fff;\n+        }\n+    \n     }\n \n-    .filterbtn {\n-        color: #fff;\n-    }\n+   \n \n-    .filterbtn img {\n-        filter: contrast(0);\n-    }\n-\n-    .footer .socials li svg path {\n-        fill: #fff;\n-    }\n-\n-\n     \n }\n"
+                },
+                {
+                    "date": 1722846142720,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,8 +53,13 @@\n         border-color: #fff;\n         color: #fff;\n     }\n \n+    .mobheadbox {\n+        a img {\n+            filter: brightness(0);\n+        }\n+    }\n \n \n \n \n@@ -63,9 +68,8 @@\n \n \n \n \n-\n }\n @media(max-width:991.8px) {\n     .darktheme {\n         header.header nav.show {\n"
+                },
+                {
+                    "date": 1722846173478,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n     }\n \n     .mobheadbox {\n         a img {\n-            filter: brightness(0);\n+            filter: invert(1);\n         }\n     }\n \n \n"
                 }
             ],
             "date": 1721747681623,

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 29,
+            "activePatchIndex": 31,
             "patches": [
                 {
                     "date": 1721745642702,
@@ -124,6 +124,14 @@
                 {
                     "date": 1722846547348,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,8 +25,9 @@\n             <li><a href=\"team-open.html\" target=\"_blank\">Team (open)</a></li>\n             <li><a href=\"offices-contacts.html\" target=\"_blank\">Offices / Contacts</a></li>\n             <li><a href=\"media.html\" target=\"_blank\">Media</a></li>\n             <li><a href=\"textpage.html\" target=\"_blank\">Text page (Privacy, Terms)</a></li>\n+            <li><a href=\"article.html\" target=\"_blank\">Article</a></li>\n         </ul>\n     </div>\n \n \n"
+                },
+                {
+                    "date": 1723129969440,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,9 @@\n             <li><a href=\"offices-contacts.html\" target=\"_blank\">Offices / Contacts</a></li>\n             <li><a href=\"media.html\" target=\"_blank\">Media</a></li>\n             <li><a href=\"textpage.html\" target=\"_blank\">Text page (Privacy, Terms)</a></li>\n             <li><a href=\"article.html\" target=\"_blank\">Article</a></li>\n+            <li><a href=\"ty.html\" target=\"_blank\">Thank You</a></li>\n         </ul>\n     </div>\n \n \n"
+                },
+                {
+                    "date": 1723131014533,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,9 @@\n             <li><a href=\"media.html\" target=\"_blank\">Media</a></li>\n             <li><a href=\"textpage.html\" target=\"_blank\">Text page (Privacy, Terms)</a></li>\n             <li><a href=\"article.html\" target=\"_blank\">Article</a></li>\n             <li><a href=\"ty.html\" target=\"_blank\">Thank You</a></li>\n+            <li><a href=\"error.html\" target=\"_blank\">404</a></li>\n         </ul>\n     </div>\n \n \n"
                 }
             ],
             "date": 1721745642702,

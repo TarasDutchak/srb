@@ -1,0 +1,226 @@
+{
+    "sourceFile": "#source/scss/ty.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 52,
+            "patches": [
+                {
+                    "date": 1723130060663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1723130078413,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n .tysection {\n     padding: 70px 0;\n+    background: #f1f1f2;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130159627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,9 @@\n .tysection {\n     padding: 70px 0;\n     background: #f1f1f2;\n+}\n+\n+.tywrap {\n+    text-align: center;\n+    padding: 0 100px;\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130491236,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,5 +5,10 @@\n \n .tywrap {\n     text-align: center;\n     padding: 0 100px;\n+\n+    h1 {\n+        font-size: 28px;\n+        \n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130523734,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n     padding: 0 100px;\n \n     h1 {\n         font-size: 28px;\n-        \n+        color: #3c3c3c;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130530196,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,6 +9,7 @@\n \n     h1 {\n         font-size: 28px;\n         color: #3c3c3c;\n+        margin-bottom: 40px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130541123,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,6 +10,7 @@\n     h1 {\n         font-size: 28px;\n         color: #3c3c3c;\n         margin-bottom: 40px;\n+        font-weight: 600;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130550050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,7 +10,6 @@\n     h1 {\n         font-size: 28px;\n         color: #3c3c3c;\n         margin-bottom: 40px;\n-        font-weight: 600;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130559246,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,9 @@\n         font-size: 28px;\n         color: #3c3c3c;\n         margin-bottom: 40px;\n     }\n+\n+    p {\n+        margin-bottom: 30px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130573047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n     padding: 0 100px;\n \n     h1 {\n         font-size: 28px;\n-        color: #3c3c3c;\n+        color: #64656a;\n         margin-bottom: 40px;\n     }\n \n     p {\n"
+                },
+                {
+                    "date": 1723130583078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,7 +13,9 @@\n         margin-bottom: 40px;\n     }\n \n     p {\n+        color: #64656a;\n+        font-size: 16px;\n         margin-bottom: 30px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130592762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,5 +17,9 @@\n         color: #64656a;\n         font-size: 16px;\n         margin-bottom: 30px;\n     }\n+\n+    a {\n+        margin: 0 10px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130601016,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,5 +21,9 @@\n \n     a {\n         margin: 0 10px;\n     }\n+\n+    .imgwrap {\n+        margin-top: 50px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130610387,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,6 +24,7 @@\n     }\n \n     .imgwrap {\n         margin-top: 50px;\n+        height: 400px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130619527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,6 +25,8 @@\n \n     .imgwrap {\n         margin-top: 50px;\n         height: 400px;\n+        overflow: hidden;\n+        position: relative;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130636863,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,6 +27,13 @@\n         margin-top: 50px;\n         height: 400px;\n         overflow: hidden;\n         position: relative;\n+\n+        img {\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 50% 50%;\n+        }\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130662427,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,8 +27,10 @@\n         margin-top: 50px;\n         height: 400px;\n         overflow: hidden;\n         position: relative;\n+        max-width: 80%;\n+        margin: 40px auto 0;\n \n         img {\n             width: 100%;\n             height: 100%;\n"
+                },
+                {
+                    "date": 1723130667988,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,14 +23,13 @@\n         margin: 0 10px;\n     }\n \n     .imgwrap {\n-        margin-top: 50px;\n         height: 400px;\n         overflow: hidden;\n         position: relative;\n         max-width: 80%;\n-        margin: 40px auto 0;\n+        margin: 50px auto 0;\n \n         img {\n             width: 100%;\n             height: 100%;\n"
+                },
+                {
+                    "date": 1723130702744,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,5 +36,11 @@\n             object-fit: cover;\n             object-position: 50% 50%;\n         }\n     }\n+}\n+\n+@media(max-width:1440.8px) {\n+    .tywrap .imgwrap {\n+        height: 300px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130716965,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,5 +42,11 @@\n @media(max-width:1440.8px) {\n     .tywrap .imgwrap {\n         height: 300px;\n     }\n+}\n+\n+@media(max-width:1199.8px) {\n+    .tywrap .imgwrap {\n+        height: 300px;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130731807,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,8 +45,9 @@\n     }\n }\n \n @media(max-width:1199.8px) {\n-    .tywrap .imgwrap {\n-        height: 300px;\n+    .tywrap {\n+        text-align: center;\n+        padding: 0 40px;\n     }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130742047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,5 +49,9 @@\n     .tywrap {\n         text-align: center;\n         padding: 0 40px;\n     }\n+\n+    .tywrap .imgwrap {\n+        max-width: 100%;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130796615,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,5 +53,9 @@\n \n     .tywrap .imgwrap {\n         max-width: 100%;\n     }\n+}\n+\n+@media(max-width:575.8px) {\n+    \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130802758,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,6 +56,8 @@\n     }\n }\n \n @media(max-width:575.8px) {\n-    \n+    .tywrap {\n+        padding: 0;\n+    }\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130814136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -59,5 +59,12 @@\n @media(max-width:575.8px) {\n     .tywrap {\n         padding: 0;\n     }\n+\n+    .tywrap h1 {\n+        font-size: 24px;\n+    }\n+\n+\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130819944,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,8 +62,9 @@\n     }\n \n     .tywrap h1 {\n         font-size: 24px;\n+        margin-bottom: 30px;\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1723130835308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,10 +62,14 @@\n     }\n \n     .tywrap h1 {\n         font-size: 24px;\n-        margin-bottom: 30px;\n+        margin-bottom: 25px;\n     }\n \n+    .gnrbtn {\n+        max-width: calc(50% - 10px);\n+    }\n \n \n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130843471,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,10 @@\n         margin-bottom: 25px;\n     }\n \n     .gnrbtn {\n-        max-width: calc(50% - 10px);\n+        width: calc(50% - 10px);\n+\n     }\n \n \n \n"
+                },
+                {
+                    "date": 1723130851653,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,9 @@\n         margin-bottom: 25px;\n     }\n \n     .gnrbtn {\n-        width: calc(50% - 10px);\n+        width: calc(50% - 15px);\n \n     }\n \n \n"
+                },
+                {
+                    "date": 1723130864083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,8 +67,9 @@\n     }\n \n     .gnrbtn {\n         width: calc(50% - 15px);\n+        margin: 0;\n \n     }\n \n \n"
+                },
+                {
+                    "date": 1723130877619,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n         font-size: 24px;\n         margin-bottom: 25px;\n     }\n \n-    .gnrbtn {\n+    .tywrap a.gnrbtn {\n         width: calc(50% - 15px);\n         margin: 0;\n \n     }\n"
+                },
+                {
+                    "date": 1723130904571,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,9 @@\n     }\n \n     .tywrap a.gnrbtn {\n         width: calc(50% - 15px);\n-        margin: 0;\n+        margin: 0 5px;\n \n     }\n \n \n"
+                },
+                {
+                    "date": 1723130942822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,7 +71,11 @@\n         margin: 0 5px;\n \n     }\n \n+    .tywrap .imgwrap {\n+        height: 200px;\n+        margin-top: 30px;\n+    }\n \n \n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130958274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,5 +77,9 @@\n         margin-top: 30px;\n     }\n \n \n+}\n+\n+@media(max-width:360.8px) {\n+\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723130982407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,88 @@\n+.tysection {\n+    padding: 70px 0;\n+    background: #f1f1f2;\n+}\n+\n+.tywrap {\n+    text-align: center;\n+    padding: 0 100px;\n+\n+    h1 {\n+        font-size: 28px;\n+        color: #64656a;\n+        margin-bottom: 40px;\n+    }\n+\n+    p {\n+        color: #64656a;\n+        font-size: 16px;\n+        margin-bottom: 30px;\n+    }\n+\n+    a {\n+        margin: 0 10px;\n+    }\n+\n+    .imgwrap {\n+        height: 400px;\n+        overflow: hidden;\n+        position: relative;\n+        max-width: 80%;\n+        margin: 50px auto 0;\n+\n+        img {\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 50% 50%;\n+        }\n+    }\n+}\n+\n+@media(max-width:1440.8px) {\n+    .tywrap .imgwrap {\n+        height: 300px;\n+    }\n+}\n+\n+@media(max-width:1199.8px) {\n+    .tywrap {\n+        text-align: center;\n+        padding: 0 40px;\n+    }\n+\n+    .tywrap .imgwrap {\n+        max-width: 100%;\n+    }\n+}\n+\n+@media(max-width:575.8px) {\n+    .tywrap {\n+        padding: 0;\n+    }\n+\n+    .tywrap h1 {\n+        font-size: 24px;\n+        margin-bottom: 25px;\n+    }\n+\n+    .tywrap a.gnrbtn {\n+        width: calc(50% - 15px);\n+        margin: 0 5px;\n+\n+    }\n+\n+    .tywrap .imgwrap {\n+        height: 200px;\n+        margin-top: 30px;\n+    }\n+\n+\n+}\n+\n+@media(max-width:360.8px) {\n+    .tywrap a.gnrbtn {\n+        width: 100%;\n+        margin-bottom: 10px;\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723131082814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,8 +38,12 @@\n         }\n     }\n }\n \n+.tywrap.err {\n+\n+}\n+\n @media(max-width:1440.8px) {\n     .tywrap .imgwrap {\n         height: 300px;\n     }\n@@ -82,92 +86,7 @@\n \n @media(max-width:360.8px) {\n     .tywrap a.gnrbtn {\n         width: 100%;\n-        margin-bottom: 10px;\n+        margin-bottom: 20px;\n     }\n-}\n-.tysection {\n-    padding: 70px 0;\n-    background: #f1f1f2;\n-}\n-\n-.tywrap {\n-    text-align: center;\n-    padding: 0 100px;\n-\n-    h1 {\n-        font-size: 28px;\n-        color: #64656a;\n-        margin-bottom: 40px;\n-    }\n-\n-    p {\n-        color: #64656a;\n-        font-size: 16px;\n-        margin-bottom: 30px;\n-    }\n-\n-    a {\n-        margin: 0 10px;\n-    }\n-\n-    .imgwrap {\n-        height: 400px;\n-        overflow: hidden;\n-        position: relative;\n-        max-width: 80%;\n-        margin: 50px auto 0;\n-\n-        img {\n-            width: 100%;\n-            height: 100%;\n-            object-fit: cover;\n-            object-position: 50% 50%;\n-        }\n-    }\n-}\n-\n-@media(max-width:1440.8px) {\n-    .tywrap .imgwrap {\n-        height: 300px;\n-    }\n-}\n-\n-@media(max-width:1199.8px) {\n-    .tywrap {\n-        text-align: center;\n-        padding: 0 40px;\n-    }\n-\n-    .tywrap .imgwrap {\n-        max-width: 100%;\n-    }\n-}\n-\n-@media(max-width:575.8px) {\n-    .tywrap {\n-        padding: 0;\n-    }\n-\n-    .tywrap h1 {\n-        font-size: 24px;\n-        margin-bottom: 25px;\n-    }\n-\n-    .tywrap a.gnrbtn {\n-        width: calc(50% - 15px);\n-        margin: 0 5px;\n-\n-    }\n-\n-    .tywrap .imgwrap {\n-        height: 200px;\n-        margin-top: 30px;\n-    }\n-\n-\n-}\n-\n-@media(max-width:360.8px) {\n-\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723131093152,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,9 @@\n     }\n }\n \n .tywrap.err {\n-\n+    min-height: calc(100vh - 200px);\n }\n \n @media(max-width:1440.8px) {\n     .tywrap .imgwrap {\n"
+                },
+                {
+                    "date": 1723131107068,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,9 +39,11 @@\n     }\n }\n \n .tywrap.err {\n-    min-height: calc(100vh - 200px);\n+    min-height: calc(100vh - 400px);\n+    display: flex;\n+    align-items: center;\n }\n \n @media(max-width:1440.8px) {\n     .tywrap .imgwrap {\n"
+                },
+                {
+                    "date": 1723131119206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,9 @@\n \n .tywrap.err {\n     min-height: calc(100vh - 400px);\n     display: flex;\n+    flex-direction: column;\n     align-items: center;\n }\n \n @media(max-width:1440.8px) {\n"
+                },
+                {
+                    "date": 1723131124699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -43,8 +43,9 @@\n     min-height: calc(100vh - 400px);\n     display: flex;\n     flex-direction: column;\n     align-items: center;\n+    justify-content: center;\n }\n \n @media(max-width:1440.8px) {\n     .tywrap .imgwrap {\n"
+                },
+                {
+                    "date": 1723131141594,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,12 +40,8 @@\n }\n \n .tywrap.err {\n     min-height: calc(100vh - 400px);\n-    display: flex;\n-    flex-direction: column;\n-    align-items: center;\n-    justify-content: center;\n }\n \n @media(max-width:1440.8px) {\n     .tywrap .imgwrap {\n"
+                },
+                {
+                    "date": 1723131147088,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,9 @@\n }\n \n .tywrap.err {\n     min-height: calc(100vh - 400px);\n+    padding-top: 120px;\n }\n \n @media(max-width:1440.8px) {\n     .tywrap .imgwrap {\n"
+                },
+                {
+                    "date": 1723131152541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,9 @@\n \n .tywrap.err {\n     min-height: calc(100vh - 400px);\n     padding-top: 120px;\n+    text-align: left;\n }\n \n @media(max-width:1440.8px) {\n     .tywrap .imgwrap {\n"
+                },
+                {
+                    "date": 1723131171253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,8 +42,10 @@\n .tywrap.err {\n     min-height: calc(100vh - 400px);\n     padding-top: 120px;\n     text-align: left;\n+    max-width: 800px;\n+    margin: 0 auto;\n }\n \n @media(max-width:1440.8px) {\n     .tywrap .imgwrap {\n"
+                },
+                {
+                    "date": 1723131184248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,100 @@\n+.tysection {\n+    padding: 70px 0;\n+    background: #f1f1f2;\n+}\n+\n+.tywrap {\n+    text-align: center;\n+    padding: 0 100px;\n+\n+    h1 {\n+        font-size: 28px;\n+        color: #64656a;\n+        margin-bottom: 40px;\n+    }\n+\n+    p {\n+        color: #64656a;\n+        font-size: 16px;\n+        margin-bottom: 30px;\n+    }\n+\n+    a {\n+        margin: 0 10px;\n+    }\n+\n+    .imgwrap {\n+        height: 400px;\n+        overflow: hidden;\n+        position: relative;\n+        max-width: 80%;\n+        margin: 50px auto 0;\n+\n+        img {\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 50% 50%;\n+        }\n+    }\n+}\n+\n+.tywrap.err {\n+    min-height: calc(100vh - 400px);\n+    padding-top: 120px;\n+    text-align: left;\n+    max-width: 1200px;\n+    margin: 0 auto;\n+\n+    h1 {\n+        margin-bottom: 30px;\n+    }\n+}\n+\n+@media(max-width:1440.8px) {\n+    .tywrap .imgwrap {\n+        height: 300px;\n+    }\n+}\n+\n+@media(max-width:1199.8px) {\n+    .tywrap {\n+        text-align: center;\n+        padding: 0 40px;\n+    }\n+\n+    .tywrap .imgwrap {\n+        max-width: 100%;\n+    }\n+}\n+\n+@media(max-width:575.8px) {\n+    .tywrap {\n+        padding: 0;\n+    }\n+\n+    .tywrap h1 {\n+        font-size: 24px;\n+        margin-bottom: 25px;\n+    }\n+\n+    .tywrap a.gnrbtn {\n+        width: calc(50% - 15px);\n+        margin: 0 5px;\n+\n+    }\n+\n+    .tywrap .imgwrap {\n+        height: 200px;\n+        margin-top: 30px;\n+    }\n+\n+\n+}\n+\n+@media(max-width:360.8px) {\n+    .tywrap a.gnrbtn {\n+        width: 100%;\n+        margin-bottom: 20px;\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723131232170,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,104 +67,22 @@\n         max-width: 100%;\n     }\n }\n \n-@media(max-width:575.8px) {\n-    .tywrap {\n-        padding: 0;\n-    }\n-\n-    .tywrap h1 {\n-        font-size: 24px;\n-        margin-bottom: 25px;\n-    }\n-\n-    .tywrap a.gnrbtn {\n-        width: calc(50% - 15px);\n-        margin: 0 5px;\n-\n-    }\n-\n-    .tywrap .imgwrap {\n-        height: 200px;\n-        margin-top: 30px;\n-    }\n-\n-\n-}\n-\n-@media(max-width:360.8px) {\n-    .tywrap a.gnrbtn {\n-        width: 100%;\n-        margin-bottom: 20px;\n-    }\n-}\n-.tysection {\n-    padding: 70px 0;\n-    background: #f1f1f2;\n-}\n-\n-.tywrap {\n-    text-align: center;\n-    padding: 0 100px;\n-\n-    h1 {\n-        font-size: 28px;\n-        color: #64656a;\n-        margin-bottom: 40px;\n-    }\n-\n-    p {\n-        color: #64656a;\n-        font-size: 16px;\n-        margin-bottom: 30px;\n-    }\n-\n-    a {\n-        margin: 0 10px;\n-    }\n-\n-    .imgwrap {\n-        height: 400px;\n-        overflow: hidden;\n-        position: relative;\n-        max-width: 80%;\n-        margin: 50px auto 0;\n-\n-        img {\n-            width: 100%;\n-            height: 100%;\n-            object-fit: cover;\n-            object-position: 50% 50%;\n+@media(max-width:991.8px) {\n+    .tywrap.err {\n+        min-height: initial;\n+        padding-top: 120px;\n+        text-align: left;\n+        max-width: 1200px;\n+        margin: 0 auto;\n+    \n+        h1 {\n+            margin-bottom: 30px;\n         }\n     }\n }\n \n-.tywrap.err {\n-    min-height: calc(100vh - 400px);\n-    padding-top: 120px;\n-    text-align: left;\n-    max-width: 800px;\n-    margin: 0 auto;\n-}\n-\n-@media(max-width:1440.8px) {\n-    .tywrap .imgwrap {\n-        height: 300px;\n-    }\n-}\n-\n-@media(max-width:1199.8px) {\n-    .tywrap {\n-        text-align: center;\n-        padding: 0 40px;\n-    }\n-\n-    .tywrap .imgwrap {\n-        max-width: 100%;\n-    }\n-}\n-\n @media(max-width:575.8px) {\n     .tywrap {\n         padding: 0;\n     }\n"
+                },
+                {
+                    "date": 1723131238967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,11 +71,9 @@\n @media(max-width:991.8px) {\n     .tywrap.err {\n         min-height: initial;\n         padding-top: 120px;\n-        text-align: left;\n-        max-width: 1200px;\n-        margin: 0 auto;\n+        max-width: 700px;\n     \n         h1 {\n             margin-bottom: 30px;\n         }\n"
+                },
+                {
+                    "date": 1723131244127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,9 +70,9 @@\n \n @media(max-width:991.8px) {\n     .tywrap.err {\n         min-height: initial;\n-        padding-top: 120px;\n+       padding: 100px 0;\n         max-width: 700px;\n     \n         h1 {\n             margin-bottom: 30px;\n"
+                },
+                {
+                    "date": 1723131272699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,12 +69,12 @@\n }\n \n @media(max-width:991.8px) {\n     .tywrap.err {\n-        min-height: initial;\n-       padding: 100px 0;\n+        min-height: calc(100vh - 315px);\n+        padding: 100px 0;\n         max-width: 700px;\n-    \n+\n         h1 {\n             margin-bottom: 30px;\n         }\n     }\n"
+                },
+                {
+                    "date": 1723131299746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n }\n \n @media(max-width:991.8px) {\n     .tywrap.err {\n-        min-height: calc(100vh - 315px);\n+        min-height: calc(100vh - 395px);\n         padding: 100px 0;\n         max-width: 700px;\n \n         h1 {\n"
+                },
+                {
+                    "date": 1723131306952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,9 @@\n }\n \n @media(max-width:991.8px) {\n     .tywrap.err {\n-        min-height: calc(100vh - 395px);\n+        min-height: calc(100vh - 450px);\n         padding: 100px 0;\n         max-width: 700px;\n \n         h1 {\n"
+                },
+                {
+                    "date": 1723131332397,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,122 @@\n+.tysection {\n+    padding: 70px 0;\n+    background: #f1f1f2;\n+}\n+\n+.tywrap {\n+    text-align: center;\n+    padding: 0 100px;\n+\n+    h1 {\n+        font-size: 28px;\n+        color: #64656a;\n+        margin-bottom: 40px;\n+    }\n+\n+    p {\n+        color: #64656a;\n+        font-size: 16px;\n+        margin-bottom: 30px;\n+    }\n+\n+    a {\n+        margin: 0 10px;\n+    }\n+\n+    .imgwrap {\n+        height: 400px;\n+        overflow: hidden;\n+        position: relative;\n+        max-width: 80%;\n+        margin: 50px auto 0;\n+\n+        img {\n+            width: 100%;\n+            height: 100%;\n+            object-fit: cover;\n+            object-position: 50% 50%;\n+        }\n+    }\n+}\n+\n+.tywrap.err {\n+    min-height: calc(100vh - 400px);\n+    padding-top: 120px;\n+    text-align: left;\n+    max-width: 1200px;\n+    margin: 0 auto;\n+\n+    h1 {\n+        margin-bottom: 30px;\n+    }\n+}\n+\n+@media(max-width:1440.8px) {\n+    .tywrap .imgwrap {\n+        height: 300px;\n+    }\n+}\n+\n+@media(max-width:1199.8px) {\n+    .tywrap {\n+        text-align: center;\n+        padding: 0 40px;\n+    }\n+\n+    .tywrap .imgwrap {\n+        max-width: 100%;\n+    }\n+}\n+\n+@media(max-width:991.8px) {\n+    .tywrap.err {\n+        min-height: calc(100vh - 450px);\n+        padding: 100px 0;\n+        max-width: 700px;\n+\n+        h1 {\n+            margin-bottom: 30px;\n+        }\n+    }\n+}\n+\n+@media(max-width:575.8px) {\n+    .tywrap {\n+        padding: 0;\n+    }\n+\n+    .tywrap h1 {\n+        font-size: 24px;\n+        margin-bottom: 25px;\n+    }\n+\n+    .tywrap a.gnrbtn {\n+        width: calc(50% - 15px);\n+        margin: 0 5px;\n+\n+    }\n+\n+    .tywrap .imgwrap {\n+        height: 200px;\n+        margin-top: 30px;\n+    }\n+\n+    .tywrap.err {\n+        min-height: calc(100vh - 450px);\n+        padding: 60px 0;\n+        max-width: 700px;\n+\n+        h1 {\n+            margin-bottom: 30px;\n+        }\n+    }\n+\n+\n+}\n+\n+@media(max-width:360.8px) {\n+    .tywrap a.gnrbtn {\n+        width: 100%;\n+        margin-bottom: 20px;\n+    }\n+}\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1723131389188,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -119,116 +119,10 @@\n         width: 100%;\n         margin-bottom: 20px;\n     }\n }\n-.tysection {\n-    padding: 70px 0;\n-    background: #f1f1f2;\n-}\n \n-.tywrap {\n-    text-align: center;\n-    padding: 0 100px;\n-\n-    h1 {\n-        font-size: 28px;\n-        color: #64656a;\n-        margin-bottom: 40px;\n-    }\n-\n-    p {\n-        color: #64656a;\n-        font-size: 16px;\n-        margin-bottom: 30px;\n-    }\n-\n-    a {\n-        margin: 0 10px;\n-    }\n-\n-    .imgwrap {\n-        height: 400px;\n-        overflow: hidden;\n-        position: relative;\n-        max-width: 80%;\n-        margin: 50px auto 0;\n-\n-        img {\n-            width: 100%;\n-            height: 100%;\n-            object-fit: cover;\n-            object-position: 50% 50%;\n-        }\n-    }\n-}\n-\n-.tywrap.err {\n-    min-height: calc(100vh - 400px);\n-    padding-top: 120px;\n-    text-align: left;\n-    max-width: 1200px;\n-    margin: 0 auto;\n-\n-    h1 {\n-        margin-bottom: 30px;\n-    }\n-}\n-\n-@media(max-width:1440.8px) {\n-    .tywrap .imgwrap {\n-        height: 300px;\n-    }\n-}\n-\n-@media(max-width:1199.8px) {\n-    .tywrap {\n-        text-align: center;\n-        padding: 0 40px;\n-    }\n-\n-    .tywrap .imgwrap {\n-        max-width: 100%;\n-    }\n-}\n-\n-@media(max-width:991.8px) {\n+@media(max-width:800px) and (orientation: landscape) {\n     .tywrap.err {\n-        min-height: calc(100vh - 450px);\n-        padding: 100px 0;\n-        max-width: 700px;\n-\n-        h1 {\n-            margin-bottom: 30px;\n-        }\n+        padding: 10px;\n     }\n-}\n-\n-@media(max-width:575.8px) {\n-    .tywrap {\n-        padding: 0;\n-    }\n-\n-    .tywrap h1 {\n-        font-size: 24px;\n-        margin-bottom: 25px;\n-    }\n-\n-    .tywrap a.gnrbtn {\n-        width: calc(50% - 15px);\n-        margin: 0 5px;\n-\n-    }\n-\n-    .tywrap .imgwrap {\n-        height: 200px;\n-        margin-top: 30px;\n-    }\n-\n-\n-}\n-\n-@media(max-width:360.8px) {\n-    .tywrap a.gnrbtn {\n-        width: 100%;\n-        margin-bottom: 20px;\n-    }\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1723130060662,
+            "name": "Commit-0",
+            "content": ".tysection {\n    padding: 70px 0;\n}"
+        }
+    ]
+}

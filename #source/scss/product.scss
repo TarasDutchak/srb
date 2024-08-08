@@ -402,6 +402,35 @@
     margin-bottom: 50px;
 }
 
+.prodarticle {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        margin-bottom: 20px;
+        color: #64656a;
+        font-weight: 600;
+    }
+
+    h6 {
+        font-size: 16px;
+    }
+
+    a {
+        text-decoration: underline;
+    }
+
+    ul, ol {
+        padding-left: 20px;
+        margin: 20px 0;
+        font-size: 14px;
+        color: #64656a;
+    }
+}
+
 @media(max-width:1199.8px) {
     .projectcontent {
         padding-left: 15px;
@@ -491,7 +520,7 @@
 
 @media(max-width:575.8px) {
 
-    
+
     .projectslider .imgwrap {
         height: 350px;
     }
@@ -558,6 +587,6 @@
         margin-left: -25px;
     }
 
-    
+
 
 }
